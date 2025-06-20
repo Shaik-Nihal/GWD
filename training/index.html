@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Healthcare Training & Certification Portal - Empower Your Global Journey</title>
+    <meta name="description" content="Professional healthcare training and certification programs for nurses, doctors, and allied health professionals seeking global opportunities.">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="logo">
+                    <i class="fas fa-heartbeat"></i>
+                    <span>HealthCare EDGE</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#programs">Programs</a></li>
+                    <li><a href="#testimonials">Success Stories</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero" id="home">
+            <div class="hero-background">
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="container">
+                <div class="hero-content">
+                    <h1 class="hero-title">Empower Your Global Healthcare Journey</h1>
+                    <p class="hero-subtitle">From aspirations to accreditation — your journey to serve beyond borders begins here</p>
+                    
+                    <div class="quick-action-nav">
+                        <h3>How can we help you today?</h3>
+                        <div class="quick-actions">
+                            <button class="quick-btn" onclick="scrollToPrograms()">
+                                <i class="fas fa-graduation-cap"></i>
+                                Explore Programs
+                            </button>
+                            <button class="quick-btn" onclick="scrollToTestimonials()">
+                                <i class="fas fa-star"></i>
+                                See Success Stories
+                            </button>
+                        </div>
+                    </div>
+                    
+                    <div class="hero-stats">
+                        <div class="stat">
+                            <span class="stat-number">5000+</span>
+                            <span class="stat-label">Certified Professionals</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">95%</span>
+                            <span class="stat-label">Success Rate</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">50+</span>
+                            <span class="stat-label">Countries Served</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="programs" id="programs">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Choose Your Path to Excellence</h2>
+                    <p>Discover specialized training programs designed for your healthcare profession</p>
+                </div>
+                
+                <div class="edge-cards">
+                    <div class="edge-card" data-program="nurse">
+                        <div class="card-icon">
+                            <i class="fas fa-user-nurse"></i>
+                        </div>
+                        <h3>Nurse EDGE</h3>
+                        <p class="card-tagline">OSCE · Language · Soft Skills</p>
+                        <p class="card-description">Comprehensive nursing certification and skills development for global opportunities</p>
+                        <ul class="card-features">
+                            <li><i class="fas fa-check"></i> Clinical Certifications (OSCE)</li>
+                            <li><i class="fas fa-check"></i> Language & Communication</li>
+                            <li><i class="fas fa-check"></i> Professional Etiquette</li>
+                            <li><i class="fas fa-check"></i> Country-Specific Readiness</li>
+                        </ul>
+                        <button class="card-btn" onclick="navigateToPage('/2006/training/nurse-edge.html')">
+                            Explore Nurse EDGE
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+
+                    <div class="edge-card" data-program="doc">
+                        <div class="card-icon">
+                            <i class="fas fa-stethoscope"></i>
+                        </div>
+                        <h3>Doc EDGE</h3>
+                        <p class="card-tagline">PLAB · USMLE · NHS Fellowships</p>
+                        <p class="card-description">Advanced medical certification and fellowship programs for practicing physicians</p>
+                        <ul class="card-features">
+                            <li><i class="fas fa-check"></i> Clinical Certifications (PLAB, USMLE)</li>
+                            <li><i class="fas fa-check"></i> NHS Fellowships</li>
+                            <li><i class="fas fa-check"></i> Licensing Support</li>
+                            <li><i class="fas fa-check"></i> Country-Specific Readiness</li>
+                        </ul>
+                        <button class="card-btn" onclick="navigateToPage('/2006/training/doc-edge.html')">
+                            Explore Doc EDGE
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+
+                    <div class="edge-card" data-program="allied">
+                        <div class="card-icon">
+                            <i class="fas fa-hand-holding-medical"></i>
+                        </div>
+                        <h3>Allied EDGE</h3>
+                        <p class="card-tagline">Licensing · Language · Leadership</p>
+                        <p class="card-description">Specialized training for allied health professionals seeking international recognition</p>
+                        <ul class="card-features">
+                            <li><i class="fas fa-check"></i> Clinical Certifications</li>
+                            <li><i class="fas fa-check"></i> Licensing Assistance</li>
+                            <li><i class="fas fa-check"></i> Professional Development</li>
+                            <li><i class="fas fa-check"></i> Country-Specific Readiness</li>
+                        </ul>
+                        <button class="card-btn" onclick="navigateToPage('/2006/training/allied-edge.html')">
+                            Explore Allied EDGE
+                            <i class="fas fa-arrow-right"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="feature-highlights">
+            <div class="container">
+                <div class="highlights-grid">
+                    <div class="highlight-item">
+                        <div class="highlight-icon">
+                            <i class="fas fa-globe"></i>
+                        </div>
+                        <h4>Country Guidance</h4>
+                        <p>Navigate healthcare systems worldwide with expert support</p>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h4>Certification Prep</h4>
+                        <p>Comprehensive preparation for international healthcare certifications</p>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-icon">
+                            <i class="fas fa-comments"></i>
+                        </div>
+                        <h4>Mentor Support</h4>
+                        <p>One-on-one guidance from experienced healthcare professionals</p>
+                    </div>
+                    <div class="highlight-item">
+                        <div class="highlight-icon">
+                            <i class="fas fa-users"></i>
+                        </div>
+                        <h4>Community</h4>
+                        <p>Join a global network of certified healthcare professionals</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials" id="testimonials">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Success Stories That Inspire</h2>
+                    <p>Hear from healthcare professionals who transformed their careers with our programs</p>
+                </div>
+                
+                <div class="testimonial-carousel">
+                    <div class="testimonial active">
+                        <div class="testimonial-content">
+                            <blockquote>
+                                "In 3 months I passed OSCE and now serve in Berlin. The language training and cultural preparation made all the difference."
+                            </blockquote>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">
+                                    <img src="https://images.pexels.com/photos/5327585/pexels-photo-5327585.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop" alt="Sandra Rodriguez">
+                                </div>
+                                <div class="author-info">
+                                    <h4>Sandra Rodriguez</h4>
+                                    <p>Registered Nurse, Berlin Medical Center</p>
+                                    <div class="author-journey">
+                                        <span class="flag">🇵🇭</span>
+                                        <i class="fas fa-arrow-right"></i>
+                                        <span class="flag">🇩🇪</span>
+                                        <span>Philippines → Germany</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <blockquote>
+                                "Doc EDGE helped me pass USMLE and secure a residency in New York. The fellowship guidance was exceptional."
+                            </blockquote>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">
+                                    <img src="https://images.pexels.com/photos/6129967/pexels-photo-6129967.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop" alt="Dr. Raj Patel">
+                                </div>
+                                <div class="author-info">
+                                    <h4>Dr. Raj Patel</h4>
+                                    <p>Internal Medicine Resident, NYU Langone</p>
+                                    <div class="author-journey">
+                                        <span class="flag">🇮🇳</span>
+                                        <i class="fas fa-arrow-right"></i>
+                                        <span class="flag">🇺🇸</span>
+                                        <span>India → USA</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <blockquote>
+                                "I never imagined I'd be working in Toronto as a physiotherapist. Allied EDGE made my dream a reality."
+                            </blockquote>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">
+                                    <img src="https://images.pexels.com/photos/5327921/pexels-photo-5327921.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop" alt="Maria Santos">
+                                </div>
+                                <div class="author-info">
+                                    <h4>Maria Santos</h4>
+                                    <p>Senior Physiotherapist, Toronto General Hospital</p>
+                                    <div class="author-journey">
+                                        <span class="flag">🇵🇭</span>
+                                        <i class="fas fa-arrow-right"></i>
+                                        <span class="flag">🇨🇦</span>
+                                        <span>Philippines → Canada</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="carousel-controls">
+                    <button class="carousel-btn prev" onclick="previousTestimonial()">
+                        <i class="fas fa-chevron-left"></i>
+                    </button>
+                    <div class="carousel-indicators">
+                        <span class="indicator active" onclick="currentTestimonial(1)"></span>
+                        <span class="indicator" onclick="currentTestimonial(2)"></span>
+                        <span class="indicator" onclick="currentTestimonial(3)"></span>
+                    </div>
+                    <button class="carousel-btn next" onclick="nextTestimonial()">
+                        <i class="fas fa-chevron-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <section class="alumni-spotlight">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Alumni Spotlight</h2>
+                    <p>2,000+ professionals certified across 18+ countries</p>
+                </div>
+                
+                <div class="alumni-grid">
+                    <div class="alumni-card">
+                        <div class="alumni-photo">
+                            <img src="https://images.pexels.com/photos/5327656/pexels-photo-5327656.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" alt="Dr. Sarah Chen">
+                        </div>
+                        <h4>Dr. Sarah Chen</h4>
+                        <p>Cardiologist, Royal London Hospital</p>
+                        <div class="alumni-location">
+                            <span class="flag">🇨🇳</span>
+                            <i class="fas fa-arrow-right"></i>
+                            <span class="flag">🇬🇧</span>
+                        </div>
+                    </div>
+                    
+                    <div class="alumni-card">
+                        <div class="alumni-photo">
+                            <img src="https://images.pexels.com/photos/6129507/pexels-photo-6129507.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" alt="James Wilson">
+                        </div>
+                        <h4>James Wilson</h4>
+                        <p>ICU Nurse, Sydney Hospital</p>
+                        <div class="alumni-location">
+                            <span class="flag">🇿🇦</span>
+                            <i class="fas fa-arrow-right"></i>
+                            <span class="flag">🇦🇺</span>
+                        </div>
+                    </div>
+                    
+                    <div class="alumni-card">
+                        <div class="alumni-photo">
+                            <img src="https://images.pexels.com/photos/5327580/pexels-photo-5327580.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" alt="Dr. Priya Sharma">
+                        </div>
+                        <h4>Dr. Priya Sharma</h4>
+                        <p>Pediatrician, Mayo Clinic</p>
+                        <div class="alumni-location">
+                            <span class="flag">🇮🇳</span>
+                            <i class="fas fa-arrow-right"></i>
+                            <span class="flag">🇺🇸</span>
+                        </div>
+                    </div>
+                    
+                    <div class="alumni-card">
+                        <div class="alumni-photo">
+                            <img src="https://images.pexels.com/photos/5327647/pexels-photo-5327647.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" alt="Lisa Thompson">
+                        </div>
+                        <h4>Lisa Thompson</h4>
+                        <p>Radiographer, Vancouver General</p>
+                        <div class="alumni-location">
+                            <span class="flag">🇬🇧</span>
+                            <i class="fas fa-arrow-right"></i>
+                            <span class="flag">🇨🇦</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="motivation-bar">
+            <div class="container">
+                <div class="motivation-content">
+                    <h3>Join Thousands of Certified Healthcare Professionals</h3>
+                    <p>Your journey to global healthcare excellence starts with a single step</p>
+                    <button class="cta-btn" onclick="scrollToPrograms()">
+                        Start Your Journey Today
+                        <i class="fas fa-rocket"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <i class="fas fa-heartbeat"></i>
+                        <span>HealthCare EDGE</span>
+                    </div>
+                    <p>Empowering healthcare professionals to achieve global excellence through comprehensive training and certification programs.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Quick Links</h4>
+                    <ul>
+                        <li><a href="nurse-edge.html">Nurse EDGE</a></li>
+                        <li><a href="doc-edge.html">Doc EDGE</a></li>
+                        <li><a href="allied-edge.html">Allied EDGE</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> info@healthcareedge.com</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Global Healthcare Center</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 HealthCare EDGE. All rights reserved. Empowering healthcare professionals worldwide.</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="/2006/training/scripts/script.js"></script>
+</body>
+</html>
