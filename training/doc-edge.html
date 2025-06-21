@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Doc EDGE - Certification Pathways for Global Doctors | HealthCare EDGE</title>
-    <meta name="description" content="From PLAB to USMLE and NHS Fellowships—we guide your path to global medical practice.">
+    <title>Doc EDGE - Course Searcher | HealthCare EDGE</title>
+    <meta name="description" content="Find the perfect medical certification pathway for your specialty and target country.">
     <link rel="stylesheet" href="/2006/training/style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
@@ -20,6 +20,7 @@
                     <li><a href="index.html">Home</a></li>
                     <li><a href="nurse-edge.html">Nurse EDGE</a></li>
                     <li><a href="allied-edge.html">Allied EDGE</a></li>
+                    <li><a href="fee-structure.html">Pricing</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
                 <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
@@ -41,8 +42,8 @@
                     <div class="breadcrumb">
                         <a href="index.html">Home</a> <i class="fas fa-chevron-right"></i> <span>Doc EDGE</span>
                     </div>
-                    <h1 class="hero-title">Certification Pathways for Global Doctors</h1>
-                    <p class="hero-subtitle">From PLAB to USMLE and NHS Fellowships—we guide your path</p>
+                    <h1 class="hero-title">Find Your Medical Certification Pathway</h1>
+                    <p class="hero-subtitle">Discover specialized programs for your medical specialty and target country</p>
                     <div class="hero-badge">
                         <i class="fas fa-stethoscope"></i>
                         <span>Medical Excellence</span>
@@ -51,178 +52,251 @@
             </div>
         </section>
 
-        <section class="certifications-overview">
+        <section class="course-searcher">
             <div class="container">
-                <div class="section-header">
-                    <h2>Master Global Medical Certifications</h2>
-                    <p>Comprehensive preparation for the world's most recognized medical examinations</p>
+                <div class="searcher-header">
+                    <h2>Medical Course Searcher</h2>
+                    <p>Filter and find the perfect medical certification pathway for your career goals</p>
                 </div>
                 
-                <div class="certifications-grid">
-                    <div class="certification-card">
-                        <div class="cert-icon">
+                <div class="filters-container">
+                    <div class="filter-group">
+                        <label for="country-filter">Target Country</label>
+                        <select id="country-filter" onchange="filterCourses()">
+                            <option value="">All Countries</option>
+                            <option value="uk">United Kingdom</option>
+                            <option value="usa">United States</option>
+                            <option value="canada">Canada</option>
+                            <option value="australia">Australia</option>
+                            <option value="germany">Germany</option>
+                            <option value="new-zealand">New Zealand</option>
+                            <option value="ireland">Ireland</option>
+                            <option value="uae">UAE</option>
+                        </select>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <label for="specialty-filter">Medical Specialty</label>
+                        <select id="specialty-filter" onchange="filterCourses()">
+                            <option value="">All Specialties</option>
+                            <option value="internal-medicine">Internal Medicine</option>
+                            <option value="surgery">Surgery</option>
+                            <option value="pediatrics">Pediatrics</option>
+                            <option value="cardiology">Cardiology</option>
+                            <option value="emergency">Emergency Medicine</option>
+                            <option value="radiology">Radiology</option>
+                            <option value="anesthesia">Anesthesia</option>
+                            <option value="psychiatry">Psychiatry</option>
+                        </select>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <label for="experience-filter">Experience Level</label>
+                        <select id="experience-filter" onchange="filterCourses()">
+                            <option value="">All Levels</option>
+                            <option value="fresh-graduate">Fresh Graduate</option>
+                            <option value="resident">Resident</option>
+                            <option value="specialist">Specialist</option>
+                            <option value="consultant">Consultant</option>
+                        </select>
+                    </div>
+                    
+                    <div class="filter-group">
+                        <label for="exam-type-filter">Exam Type</label>
+                        <select id="exam-type-filter" onchange="filterCourses()">
+                            <option value="">All Exams</option>
+                            <option value="plab">PLAB</option>
+                            <option value="usmle">USMLE</option>
+                            <option value="osce">OSCE</option>
+                            <option value="fellowship">Fellowship</option>
+                            <option value="licensing">Licensing</option>
+                        </select>
+                    </div>
+                    
+                    <button class="clear-filters-btn" onclick="clearFilters()">
+                        <i class="fas fa-times"></i>
+                        Clear Filters
+                    </button>
+                </div>
+                
+                <div class="search-results">
+                    <div class="results-header">
+                        <span id="results-count">18 pathways found</span>
+                        <div class="sort-options">
+                            <label for="sort-by">Sort by:</label>
+                            <select id="sort-by" onchange="sortCourses()">
+                                <option value="popularity">Popularity</option>
+                                <option value="duration">Duration</option>
+                                <option value="price">Price</option>
+                                <option value="success-rate">Success Rate</option>
+                            </select>
+                        </div>
+                    </div>
+                    
+                    <div class="courses-grid" id="courses-grid">
+                        <!-- Course cards will be dynamically generated -->
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="program-overview">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Doc EDGE Program Overview</h2>
+                    <p>Comprehensive medical training for global practice</p>
+                </div>
+                
+                <div class="overview-grid">
+                    <div class="overview-card">
+                        <div class="overview-icon">
                             <i class="fas fa-clipboard-check"></i>
                         </div>
-                        <h3>PLAB (UK)</h3>
-                        <div class="cert-duration">6-12 months</div>
-                        <p>Professional and Linguistic Assessments Board test for practicing medicine in the UK.</p>
-                        <ul class="cert-features">
-                            <li><i class="fas fa-check"></i> PLAB 1 & 2 preparation</li>
-                            <li><i class="fas fa-check"></i> Clinical skills training</li>
-                            <li><i class="fas fa-check"></i> GMC registration support</li>
+                        <h3>Medical Examinations</h3>
+                        <p>Master PLAB, USMLE, and other international medical examinations.</p>
+                        <ul>
+                            <li>PLAB 1 & 2 preparation</li>
+                            <li>USMLE Step 1, 2 & 3</li>
+                            <li>Clinical skills assessment</li>
+                            <li>Mock examinations</li>
                         </ul>
-                        <div class="cert-stats">
-                            <span class="success-rate">94% Pass Rate</span>
-                        </div>
                     </div>
                     
-                    <div class="certification-card">
-                        <div class="cert-icon">
-                            <i class="fas fa-user-md"></i>
-                        </div>
-                        <h3>USMLE (USA)</h3>
-                        <div class="cert-duration">12-18 months</div>
-                        <p>United States Medical Licensing Examination for medical practice in America.</p>
-                        <ul class="cert-features">
-                            <li><i class="fas fa-check"></i> Step 1, 2 & 3 preparation</li>
-                            <li><i class="fas fa-check"></i> Clinical skills assessment</li>
-                            <li><i class="fas fa-check"></i> Residency match support</li>
-                        </ul>
-                        <div class="cert-stats">
-                            <span class="success-rate">89% Pass Rate</span>
-                        </div>
-                    </div>
-                    
-                    <div class="certification-card">
-                        <div class="cert-icon">
+                    <div class="overview-card">
+                        <div class="overview-icon">
                             <i class="fas fa-hospital"></i>
                         </div>
-                        <h3>OSCE (Clinical)</h3>
-                        <div class="cert-duration">3-6 months</div>
-                        <p>Objective Structured Clinical Examination for practical medical skills assessment.</p>
-                        <ul class="cert-features">
-                            <li><i class="fas fa-check"></i> Clinical scenarios practice</li>
-                            <li><i class="fas fa-check"></i> Patient interaction skills</li>
-                            <li><i class="fas fa-check"></i> Medical procedures training</li>
+                        <h3>Fellowship Programs</h3>
+                        <p>Access exclusive fellowship opportunities in prestigious institutions.</p>
+                        <ul>
+                            <li>NHS fellowship applications</li>
+                            <li>Research opportunities</li>
+                            <li>Mentorship programs</li>
+                            <li>Specialty training</li>
                         </ul>
-                        <div class="cert-stats">
-                            <span class="success-rate">96% Pass Rate</span>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="fellowships-section">
-            <div class="container">
-                <div class="section-header">
-                    <h2>NHS Fellowships & Licensing Support</h2>
-                    <p>Exclusive pathways to prestigious fellowship programs and comprehensive licensing assistance</p>
-                </div>
-                
-                <div class="fellowships-content">
-                    <div class="fellowships-info">
-                        <h3>NHS Fellowship Opportunities</h3>
-                        <p>Access exclusive fellowship positions in the UK's National Health Service with our comprehensive support program.</p>
-                        
-                        <div class="fellowship-benefits">
-                            <div class="benefit-item">
-                                <i class="fas fa-award"></i>
-                                <div>
-                                    <h4>Fellowship Application Guidance</h4>
-                                    <p>Expert assistance with application processes and documentation</p>
-                                </div>
-                            </div>
-                            <div class="benefit-item">
-                                <i class="fas fa-users"></i>
-                                <div>
-                                    <h4>Mentorship Programs</h4>
-                                    <p>Connect with experienced NHS consultants and specialists</p>
-                                </div>
-                            </div>
-                            <div class="benefit-item">
-                                <i class="fas fa-microscope"></i>
-                                <div>
-                                    <h4>Research Opportunities</h4>
-                                    <p>Access to cutting-edge medical research and publications</p>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                     
-                    <div class="fellowship-stats">
-                        <div class="stat-highlight">
-                            <div class="stat-number">92%</div>
-                            <div class="stat-label">Fellowship Placement Success</div>
-                        </div>
-                        <div class="stat-highlight">
-                            <div class="stat-number">150+</div>
-                            <div class="stat-label">NHS Partners</div>
-                        </div>
-                        <div class="stat-highlight">
-                            <div class="stat-number">500+</div>
-                            <div class="stat-label">Doctors Placed</div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </section>
-
-        <section class="certification-timeline">
-            <div class="container">
-                <div class="section-header">
-                    <h2>Your Medical Certification Journey</h2>
-                    <p>A structured pathway from eligibility assessment to medical practice</p>
-                </div>
-                
-                <div class="timeline-checklist">
-                    <div class="checklist-step completed">
-                        <div class="step-checkbox">
-                            <i class="fas fa-check"></i>
-                        </div>
-                        <div class="step-content">
-                            <h4>Eligibility Assessment</h4>
-                            <p>Comprehensive evaluation of your medical qualifications and career goals</p>
-                        </div>
-                    </div>
-                    
-                    <div class="checklist-step">
-                        <div class="step-checkbox">
-                            <i class="fas fa-graduation-cap"></i>
-                        </div>
-                        <div class="step-content">
-                            <h4>Intensive Preparation</h4>
-                            <p>Structured training program tailored to your chosen certification path</p>
-                        </div>
-                    </div>
-                    
-                    <div class="checklist-step">
-                        <div class="step-checkbox">
-                            <i class="fas fa-clipboard-list"></i>
-                        </div>
-                        <div class="step-content">
-                            <h4>Examination Success</h4>
-                            <p>Take your medical examinations with confidence and expert support</p>
-                        </div>
-                    </div>
-                    
-                    <div class="checklist-step">
-                        <div class="step-checkbox">
+                    <div class="overview-card">
+                        <div class="overview-icon">
                             <i class="fas fa-file-signature"></i>
                         </div>
-                        <div class="step-content">
-                            <h4>Licensing & Registration</h4>
-                            <p>Complete medical licensing and registration in your target country</p>
+                        <h3>Licensing Support</h3>
+                        <p>Complete assistance with medical licensing and registration.</p>
+                        <ul>
+                            <li>GMC registration (UK)</li>
+                            <li>ECFMG certification (USA)</li>
+                            <li>Medical board applications</li>
+                            <li>Documentation support</li>
+                        </ul>
+                    </div>
+                    
+                    <div class="overview-card">
+                        <div class="overview-icon">
+                            <i class="fas fa-globe"></i>
                         </div>
+                        <h3>Country Readiness</h3>
+                        <p>Prepare for specific healthcare systems and cultural adaptation.</p>
+                        <ul>
+                            <li>Healthcare system orientation</li>
+                            <li>Cultural competency training</li>
+                            <li>Legal and ethical standards</li>
+                            <li>Immigration guidance</li>
+                        </ul>
                     </div>
                 </div>
             </div>
         </section>
 
-        <section class="doctor-testimonials">
+        <section class="success-metrics">
             <div class="container">
                 <div class="section-header">
-                    <h2>Success Stories from Global Doctors</h2>
+                    <h2>Our Medical Success Metrics</h2>
+                    <p>Proven results in medical certification and placement</p>
+                </div>
+                
+                <div class="metrics-grid">
+                    <div class="metric-card">
+                        <div class="metric-number">92%</div>
+                        <div class="metric-label">PLAB Pass Rate</div>
+                        <div class="metric-description">First-time pass rate for PLAB examinations</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-number">89%</div>
+                        <div class="metric-label">USMLE Success</div>
+                        <div class="metric-description">Success rate for USMLE Step examinations</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-number">1500+</div>
+                        <div class="metric-label">Doctors Certified</div>
+                        <div class="metric-description">Doctors successfully certified globally</div>
+                    </div>
+                    <div class="metric-card">
+                        <div class="metric-number">85%</div>
+                        <div class="metric-label">Fellowship Placement</div>
+                        <div class="metric-description">Successful fellowship placements</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="specialties-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Medical Specialties We Support</h2>
+                    <p>Comprehensive training across all major medical specialties</p>
+                </div>
+                
+                <div class="specialties-grid">
+                    <div class="specialty-card">
+                        <div class="specialty-icon">
+                            <i class="fas fa-heart"></i>
+                        </div>
+                        <h4>Cardiology</h4>
+                        <p>Heart and cardiovascular system specialization</p>
+                    </div>
+                    <div class="specialty-card">
+                        <div class="specialty-icon">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <h4>Neurology</h4>
+                        <p>Nervous system and brain disorders</p>
+                    </div>
+                    <div class="specialty-card">
+                        <div class="specialty-icon">
+                            <i class="fas fa-child"></i>
+                        </div>
+                        <h4>Pediatrics</h4>
+                        <p>Medical care for infants and children</p>
+                    </div>
+                    <div class="specialty-card">
+                        <div class="specialty-icon">
+                            <i class="fas fa-cut"></i>
+                        </div>
+                        <h4>Surgery</h4>
+                        <p>Surgical procedures and interventions</p>
+                    </div>
+                    <div class="specialty-card">
+                        <div class="specialty-icon">
+                            <i class="fas fa-x-ray"></i>
+                        </div>
+                        <h4>Radiology</h4>
+                        <p>Medical imaging and diagnostics</p>
+                    </div>
+                    <div class="specialty-card">
+                        <div class="specialty-icon">
+                            <i class="fas fa-ambulance"></i>
+                        </div>
+                        <h4>Emergency Medicine</h4>
+                        <p>Acute care and emergency treatment</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="testimonials-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Doctor Success Stories</h2>
                     <p>Physicians who advanced their careers through Doc EDGE</p>
                 </div>
                 
@@ -230,7 +304,7 @@
                     <div class="testimonial-card featured">
                         <div class="testimonial-quote">
                             <blockquote>
-                                "Doc EDGE helped me pass USMLE and secure a residency in New York. The comprehensive preparation and mentorship were exceptional."
+                                "Doc EDGE helped me pass USMLE and secure a residency in New York. The comprehensive preparation was exceptional."
                             </blockquote>
                         </div>
                         <div class="testimonial-author">
@@ -268,6 +342,29 @@
                                     <i class="fas fa-arrow-right"></i>
                                     <span class="flag">🇬🇧</span>
                                     <span>China → UK</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="testimonial-card">
+                        <div class="testimonial-quote">
+                            <blockquote>
+                                "The fellowship program opened doors I never thought possible. Now I'm conducting research at Mayo Clinic."
+                            </blockquote>
+                        </div>
+                        <div class="testimonial-author">
+                            <div class="author-avatar">
+                                <img src="https://images.pexels.com/photos/5327580/pexels-photo-5327580.jpeg?auto=compress&cs=tinysrgb&w=80&h=80&fit=crop" alt="Dr. Priya Sharma">
+                            </div>
+                            <div class="author-details">
+                                <h4>Dr. Priya Sharma</h4>
+                                <p>Research Fellow, Mayo Clinic</p>
+                                <div class="author-journey">
+                                    <span class="flag">🇮🇳</span>
+                                    <i class="fas fa-arrow-right"></i>
+                                    <span class="flag">🇺🇸</span>
+                                    <span>India → USA</span>
                                 </div>
                             </div>
                         </div>
@@ -310,7 +407,7 @@
                             <i class="fas fa-chevron-down"></i>
                         </button>
                         <div class="faq-answer">
-                            <p>While we cannot guarantee placement, our 92% success rate speaks to our comprehensive support system. We provide application guidance, interview preparation, and direct connections with fellowship programs through our extensive network.</p>
+                            <p>While we cannot guarantee placement, our 85% success rate speaks to our comprehensive support system. We provide application guidance, interview preparation, and direct connections with fellowship programs through our extensive network.</p>
                         </div>
                     </div>
                     
@@ -331,6 +428,16 @@
                         </button>
                         <div class="faq-answer">
                             <p>Each country has specific licensing requirements. However, some certifications like USMLE or PLAB can facilitate easier transitions to other countries. We provide guidance on multi-country career pathways and reciprocal recognition agreements.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            <span>What support do you provide for visa applications?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>We provide comprehensive visa and immigration support including document preparation, application guidance, and connections with immigration specialists. Our team helps with work permits, skilled worker visas, and other immigration pathways.</p>
                         </div>
                     </div>
                 </div>
@@ -367,9 +474,9 @@
                             Get Started with Doc EDGE
                             <i class="fas fa-arrow-right"></i>
                         </button>
-                        <button class="cta-btn secondary" onclick="window.location.href='index.html'">
-                            View All Programs
-                            <i class="fas fa-eye"></i>
+                        <button class="cta-btn secondary" onclick="navigateToPage('fee-structure.html')">
+                            View Pricing
+                            <i class="fas fa-dollar-sign"></i>
                         </button>
                     </div>
                 </div>
@@ -394,6 +501,7 @@
                         <li><a href="nurse-edge.html">Nurse EDGE</a></li>
                         <li><a href="doc-edge.html">Doc EDGE</a></li>
                         <li><a href="allied-edge.html">Allied EDGE</a></li>
+                        <li><a href="fee-structure.html">Fee Structure</a></li>
                     </ul>
                 </div>
                 
@@ -413,6 +521,6 @@
         </div>
     </footer>
 
-    <script src="/2006/training/scripts/script.js"></script>
+     <script src="/2006/training/scripts/script.js"></script>
 </body>
 </html>

@@ -1,0 +1,652 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fee Structure & Pricing Plans | HealthCare EDGE</title>
+    <meta name="description" content="Transparent pricing for healthcare training and certification programs. Find the perfect plan for your budget and goals.">
+    <link rel="stylesheet" href="/2006/training/style.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+</head>
+<body>
+    <header class="header">
+        <div class="container">
+            <nav class="nav">
+                <div class="logo">
+                    <i class="fas fa-heartbeat"></i>
+                    <span>HealthCare EDGE</span>
+                </div>
+                <ul class="nav-links">
+                    <li><a href="index.html">Home</a></li>
+                    <li><a href="nurse-edge.html">Nurse EDGE</a></li>
+                    <li><a href="doc-edge.html">Doc EDGE</a></li>
+                    <li><a href="allied-edge.html">Allied EDGE</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+                <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="pricing-hero">
+            <div class="hero-background">
+                <div class="hero-overlay"></div>
+            </div>
+            <div class="container">
+                <div class="hero-content">
+                    <div class="breadcrumb">
+                        <a href="index.html">Home</a> <i class="fas fa-chevron-right"></i> <span>Fee Structure</span>
+                    </div>
+                    <h1 class="hero-title">Transparent Pricing for Your Global Journey</h1>
+                    <p class="hero-subtitle">Invest in your future with our comprehensive training programs designed for success</p>
+                    <div class="pricing-toggle">
+                        <span class="toggle-label">Monthly</span>
+                        <label class="toggle-switch">
+                            <input type="checkbox" id="pricing-toggle" onchange="togglePricing()">
+                            <span class="slider"></span>
+                        </label>
+                        <span class="toggle-label">Annual <span class="discount-badge">Save 20%</span></span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pricing-plans">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Choose Your Training Plan</h2>
+                    <p>Flexible pricing options to fit your budget and career goals</p>
+                </div>
+                
+                <div class="plans-grid">
+                    <!-- Nurse EDGE Plans -->
+                    <div class="plan-category">
+                        <h3 class="category-title">
+                            <i class="fas fa-user-nurse"></i>
+                            Nurse EDGE Programs
+                        </h3>
+                        
+                        <div class="plans-row">
+                            <div class="plan-card">
+                                <div class="plan-header">
+                                    <h4>Essential</h4>
+                                    <div class="plan-price">
+                                        <span class="currency">$</span>
+                                        <span class="amount monthly-price">299</span>
+                                        <span class="amount annual-price" style="display: none;">2,390</span>
+                                        <span class="period monthly-period">/month</span>
+                                        <span class="period annual-period" style="display: none;">/year</span>
+                                    </div>
+                                    <p class="plan-description">Perfect for fresh graduates starting their global journey</p>
+                                </div>
+                                <div class="plan-features">
+                                    <ul>
+                                        <li><i class="fas fa-check"></i> OSCE Preparation (Basic)</li>
+                                        <li><i class="fas fa-check"></i> IELTS Training</li>
+                                        <li><i class="fas fa-check"></i> CV Review</li>
+                                        <li><i class="fas fa-check"></i> Email Support</li>
+                                        <li><i class="fas fa-check"></i> Study Materials</li>
+                                    </ul>
+                                </div>
+                                <button class="plan-btn">Choose Essential</button>
+                            </div>
+                            
+                            <div class="plan-card popular">
+                                <div class="popular-badge">Most Popular</div>
+                                <div class="plan-header">
+                                    <h4>Professional</h4>
+                                    <div class="plan-price">
+                                        <span class="currency">$</span>
+                                        <span class="amount monthly-price">499</span>
+                                        <span class="amount annual-price" style="display: none;">3,990</span>
+                                        <span class="period monthly-period">/month</span>
+                                        <span class="period annual-period" style="display: none;">/year</span>
+                                    </div>
+                                    <p class="plan-description">Comprehensive training for experienced nurses</p>
+                                </div>
+                                <div class="plan-features">
+                                    <ul>
+                                        <li><i class="fas fa-check"></i> OSCE Preparation (Advanced)</li>
+                                        <li><i class="fas fa-check"></i> IELTS + German Training</li>
+                                        <li><i class="fas fa-check"></i> Mock Interviews</li>
+                                        <li><i class="fas fa-check"></i> Job Placement Support</li>
+                                        <li><i class="fas fa-check"></i> 1-on-1 Mentoring</li>
+                                        <li><i class="fas fa-check"></i> Country-Specific Training</li>
+                                        <li><i class="fas fa-check"></i> 24/7 Support</li>
+                                    </ul>
+                                </div>
+                                <button class="plan-btn">Choose Professional</button>
+                            </div>
+                            
+                            <div class="plan-card">
+                                <div class="plan-header">
+                                    <h4>Premium</h4>
+                                    <div class="plan-price">
+                                        <span class="currency">$</span>
+                                        <span class="amount monthly-price">799</span>
+                                        <span class="amount annual-price" style="display: none;">6,390</span>
+                                        <span class="period monthly-period">/month</span>
+                                        <span class="period annual-period" style="display: none;">/year</span>
+                                    </div>
+                                    <p class="plan-description">All-inclusive package with guaranteed placement</p>
+                                </div>
+                                <div class="plan-features">
+                                    <ul>
+                                        <li><i class="fas fa-check"></i> Everything in Professional</li>
+                                        <li><i class="fas fa-check"></i> Guaranteed Job Placement</li>
+                                        <li><i class="fas fa-check"></i> Visa Application Support</li>
+                                        <li><i class="fas fa-check"></i> Relocation Assistance</li>
+                                        <li><i class="fas fa-check"></i> Priority Support</li>
+                                        <li><i class="fas fa-check"></i> Lifetime Alumni Network</li>
+                                    </ul>
+                                </div>
+                                <button class="plan-btn">Choose Premium</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Doc EDGE Plans -->
+                    <div class="plan-category">
+                        <h3 class="category-title">
+                            <i class="fas fa-stethoscope"></i>
+                            Doc EDGE Programs
+                        </h3>
+                        
+                        <div class="plans-row">
+                            <div class="plan-card">
+                                <div class="plan-header">
+                                    <h4>Foundation</h4>
+                                    <div class="plan-price">
+                                        <span class="currency">$</span>
+                                        <span class="amount monthly-price">599</span>
+                                        <span class="amount annual-price" style="display: none;">4,790</span>
+                                        <span class="period monthly-period">/month</span>
+                                        <span class="period annual-period" style="display: none;">/year</span>
+                                    </div>
+                                    <p class="plan-description">Essential preparation for medical licensing exams</p>
+                                </div>
+                                <div class="plan-features">
+                                    <ul>
+                                        <li><i class="fas fa-check"></i> PLAB or USMLE Prep</li>
+                                        <li><i class="fas fa-check"></i> Medical English Training</li>
+                                        <li><i class="fas fa-check"></i> Study Materials</li>
+                                        <li><i class="fas fa-check"></i> Practice Tests</li>
+                                        <li><i class="fas fa-check"></i> Email Support</li>
+                                    </ul>
+                                </div>
+                                <button class="plan-btn">Choose Foundation</button>
+                            </div>
+                            
+                            <div class="plan-card popular">
+                                <div class="popular-badge">Most Popular</div>
+                                <div class="plan-header">
+                                    <h4>Specialist</h4>
+                                    <div class="plan-price">
+                                        <span class="currency">$</span>
+                                        <span class="amount monthly-price">899</span>
+                                        <span class="amount annual-price" style="display: none;">7,190</span>
+                                        <span class="period monthly-period">/month</span>
+                                        <span class="period annual-period" style="display: none;">/year</span>
+                                    </div>
+                                    <p class="plan-description">Comprehensive medical certification with fellowship support</p>
+                                </div>
+                                <div class="plan-features">
+                                    <ul>
+                                        <li><i class="fas fa-check"></i> PLAB + USMLE Preparation</li>
+                                        <li><i class="fas fa-check"></i> Fellowship Application Support</li>
+                                        <li><i class="fas fa-check"></i> Clinical Skills Training</li>
+                                        <li><i class="fas fa-check"></i> 1-on-1 Mentoring</li>
+                                        <li><i class="fas fa-check"></i> Interview Preparation</li>
+                                        <li><i class="fas fa-check"></i> Licensing Support</li>
+                                        <li><i class="fas fa-check"></i> 24/7 Support</li>
+                                    </ul>
+                                </div>
+                                <button class="plan-btn">Choose Specialist</button>
+                            </div>
+                            
+                            <div class="plan-card">
+                                <div class="plan-header">
+                                    <h4>Elite</h4>
+                                    <div class="plan-price">
+                                        <span class="currency">$</span>
+                                        <span class="amount monthly-price">1,299</span>
+                                        <span class="amount annual-price" style="display: none;">10,390</span>
+                                        <span class="period monthly-period">/month</span>
+                                        <span class="period annual-period" style="display: none;">/year</span>
+                                    </div>
+                                    <p class="plan-description">Premium package with guaranteed fellowship placement</p>
+                                </div>
+                                <div class="plan-features">
+                                    <ul>
+                                        <li><i class="fas fa-check"></i> Everything in Specialist</li>
+                                        <li><i class="fas fa-check"></i> Guaranteed Fellowship Placement</li>
+                                        <li><i class="fas fa-check"></i> Research Opportunities</li>
+                                        <li><i class="fas fa-check"></i> Visa & Immigration Support</li>
+                                        <li><i class="fas fa-check"></i> Relocation Assistance</li>
+                                        <li><i class="fas fa-check"></i> Lifetime Career Support</li>
+                                    </ul>
+                                </div>
+                                <button class="plan-btn">Choose Elite</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Allied EDGE Plans -->
+                    <div class="plan-category">
+                        <h3 class="category-title">
+                            <i class="fas fa-hand-holding-medical"></i>
+                            Allied EDGE Programs
+                        </h3>
+                        
+                        <div class="plans-row">
+                            <div class="plan-card">
+                                <div class="plan-header">
+                                    <h4>Starter</h4>
+                                    <div class="plan-price">
+                                        <span class="currency">$</span>
+                                        <span class="amount monthly-price">249</span>
+                                        <span class="amount annual-price" style="display: none;">1,990</span>
+                                        <span class="period monthly-period">/month</span>
+                                        <span class="period annual-period" style="display: none;">/year</span>
+                                    </div>
+                                    <p class="plan-description">Basic certification support for allied health professionals</p>
+                                </div>
+                                <div class="plan-features">
+                                    <ul>
+                                        <li><i class="fas fa-check"></i> Skills Assessment Prep</li>
+                                        <li><i class="fas fa-check"></i> Language Training</li>
+                                        <li><i class="fas fa-check"></i> Documentation Support</li>
+                                        <li><i class="fas fa-check"></i> Study Materials</li>
+                                        <li><i class="fas fa-check"></i> Email Support</li>
+                                    </ul>
+                                </div>
+                                <button class="plan-btn">Choose Starter</button>
+                            </div>
+                            
+                            <div class="plan-card popular">
+                                <div class="popular-badge">Most Popular</div>
+                                <div class="plan-header">
+                                    <h4>Advanced</h4>
+                                    <div class="plan-price">
+                                        <span class="currency">$</span>
+                                        <span class="amount monthly-price">399</span>
+                                        <span class="amount annual-price" style="display: none;">3,190</span>
+                                        <span class="period monthly-period">/month</span>
+                                        <span class="period annual-period" style="display: none;">/year</span>
+                                    </div>
+                                    <p class="plan-description">Complete allied health certification with job support</p>
+                                </div>
+                                <div class="plan-features">
+                                    <ul>
+                                        <li><i class="fas fa-check"></i> Professional Licensing Support</li>
+                                        <li><i class="fas fa-check"></i> Skills Assessment + Training</li>
+                                        <li><i class="fas fa-check"></i> Job Placement Assistance</li>
+                                        <li><i class="fas fa-check"></i> 1-on-1 Mentoring</li>
+                                        <li><i class="fas fa-check"></i> Interview Preparation</li>
+                                        <li><i class="fas fa-check"></i> Country-Specific Training</li>
+                                        <li><i class="fas fa-check"></i> 24/7 Support</li>
+                                    </ul>
+                                </div>
+                                <button class="plan-btn">Choose Advanced</button>
+                            </div>
+                            
+                            <div class="plan-card">
+                                <div class="plan-header">
+                                    <h4>Complete</h4>
+                                    <div class="plan-price">
+                                        <span class="currency">$</span>
+                                        <span class="amount monthly-price">599</span>
+                                        <span class="amount annual-price" style="display: none;">4,790</span>
+                                        <span class="period monthly-period">/month</span>
+                                        <span class="period annual-period" style="display: none;">/year</span>
+                                    </div>
+                                    <p class="plan-description">All-inclusive package with guaranteed placement</p>
+                                </div>
+                                <div class="plan-features">
+                                    <ul>
+                                        <li><i class="fas fa-check"></i> Everything in Advanced</li>
+                                        <li><i class="fas fa-check"></i> Guaranteed Job Placement</li>
+                                        <li><i class="fas fa-check"></i> Visa Application Support</li>
+                                        <li><i class="fas fa-check"></i> Relocation Assistance</li>
+                                        <li><i class="fas fa-check"></i> Priority Support</li>
+                                        <li><i class="fas fa-check"></i> Lifetime Alumni Network</li>
+                                    </ul>
+                                </div>
+                                <button class="plan-btn">Choose Complete</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="country-specific-pricing">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Country-Specific Training Packages</h2>
+                    <p>Specialized programs tailored for specific destination countries</p>
+                </div>
+                
+                <div class="country-tabs">
+                    <button class="tab-btn active" onclick="showCountryPricing('uk')">
+                        <span class="flag">🇬🇧</span>
+                        United Kingdom
+                    </button>
+                    <button class="tab-btn" onclick="showCountryPricing('germany')">
+                        <span class="flag">🇩🇪</span>
+                        Germany
+                    </button>
+                    <button class="tab-btn" onclick="showCountryPricing('canada')">
+                        <span class="flag">🇨🇦</span>
+                        Canada
+                    </button>
+                    <button class="tab-btn" onclick="showCountryPricing('australia')">
+                        <span class="flag">🇦🇺</span>
+                        Australia
+                    </button>
+                    <button class="tab-btn" onclick="showCountryPricing('usa')">
+                        <span class="flag">🇺🇸</span>
+                        United States
+                    </button>
+                </div>
+                
+                <div class="country-content">
+                    <div id="uk-pricing" class="country-pricing active">
+                        <div class="country-info">
+                            <h3>United Kingdom Training Package</h3>
+                            <p>Comprehensive preparation for NHS careers including OSCE, IELTS, and UK healthcare system orientation.</p>
+                        </div>
+                        <div class="country-plans">
+                            <div class="country-plan">
+                                <h4>Nurse UK Package</h4>
+                                <div class="price">$2,499</div>
+                                <ul>
+                                    <li>OSCE Preparation</li>
+                                    <li>IELTS Training (7.0 target)</li>
+                                    <li>NHS Orientation</li>
+                                    <li>NMC Registration Support</li>
+                                    <li>Job Placement in NHS</li>
+                                </ul>
+                                <button class="country-plan-btn">Select Package</button>
+                            </div>
+                            <div class="country-plan">
+                                <h4>Doctor UK Package</h4>
+                                <div class="price">$4,999</div>
+                                <ul>
+                                    <li>PLAB 1 & 2 Preparation</li>
+                                    <li>IELTS Training</li>
+                                    <li>GMC Registration</li>
+                                    <li>NHS Fellowship Support</li>
+                                    <li>Clinical Attachment</li>
+                                </ul>
+                                <button class="country-plan-btn">Select Package</button>
+                            </div>
+                            <div class="country-plan">
+                                <h4>Allied Health UK Package</h4>
+                                <div class="price">$1,999</div>
+                                <ul>
+                                    <li>Skills Assessment</li>
+                                    <li>IELTS/OET Training</li>
+                                    <li>Professional Registration</li>
+                                    <li>UK Healthcare Orientation</li>
+                                    <li>Job Placement Support</li>
+                                </ul>
+                                <button class="country-plan-btn">Select Package</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div id="germany-pricing" class="country-pricing">
+                        <div class="country-info">
+                            <h3>Germany Training Package</h3>
+                            <p>Specialized training for German healthcare system including language certification and cultural preparation.</p>
+                        </div>
+                        <div class="country-plans">
+                            <div class="country-plan">
+                                <h4>Nurse Germany Package</h4>
+                                <div class="price">$2,799</div>
+                                <ul>
+                                    <li>German Language (B2 Level)</li>
+                                    <li>Kenntnisprüfung Prep</li>
+                                    <li>German Healthcare System</li>
+                                    <li>Anerkennung Support</li>
+                                    <li>Job Placement</li>
+                                </ul>
+                                <button class="country-plan-btn">Select Package</button>
+                            </div>
+                            <div class="country-plan">
+                                <h4>Doctor Germany Package</h4>
+                                <div class="price">$5,499</div>
+                                <ul>
+                                    <li>German Language (C1 Level)</li>
+                                    <li>Fachsprachenprüfung</li>
+                                    <li>Approbation Process</li>
+                                    <li>Medical German Training</li>
+                                    <li>Hospital Placement</li>
+                                </ul>
+                                <button class="country-plan-btn">Select Package</button>
+                            </div>
+                            <div class="country-plan">
+                                <h4>Allied Health Germany Package</h4>
+                                <div class="price">$2,299</div>
+                                <ul>
+                                    <li>German Language (B2 Level)</li>
+                                    <li>Professional Recognition</li>
+                                    <li>Skills Assessment</li>
+                                    <li>Cultural Integration</li>
+                                    <li>Job Placement Support</li>
+                                </ul>
+                                <button class="country-plan-btn">Select Package</button>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <!-- Additional country pricing tabs would be implemented similarly -->
+                </div>
+            </div>
+        </section>
+
+        <section class="payment-options">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Flexible Payment Options</h2>
+                    <p>Choose the payment method that works best for you</p>
+                </div>
+                
+                <div class="payment-grid">
+                    <div class="payment-option">
+                        <div class="payment-icon">
+                            <i class="fas fa-credit-card"></i>
+                        </div>
+                        <h4>Pay in Full</h4>
+                        <p>Get 10% discount when you pay the full amount upfront</p>
+                        <div class="payment-benefit">Save up to $500</div>
+                    </div>
+                    
+                    <div class="payment-option">
+                        <div class="payment-icon">
+                            <i class="fas fa-calendar-alt"></i>
+                        </div>
+                        <h4>Monthly Installments</h4>
+                        <p>Spread your payments over 6-12 months with 0% interest</p>
+                        <div class="payment-benefit">No hidden fees</div>
+                    </div>
+                    
+                    <div class="payment-option">
+                        <div class="payment-icon">
+                            <i class="fas fa-graduation-cap"></i>
+                        </div>
+                        <h4>Income Share Agreement</h4>
+                        <p>Pay a percentage of your income after successful job placement</p>
+                        <div class="payment-benefit">Risk-free option</div>
+                    </div>
+                    
+                    <div class="payment-option">
+                        <div class="payment-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h4>Employer Sponsorship</h4>
+                        <p>Have your employer sponsor your training for guaranteed placement</p>
+                        <div class="payment-benefit">Direct placement</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pricing-faq">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Pricing FAQ</h2>
+                    <p>Common questions about our pricing and payment options</p>
+                </div>
+                
+                <div class="faq-accordion">
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            <span>What's included in the training fee?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Our training fees include all study materials, online and in-person classes, practice tests, 1-on-1 mentoring sessions, job placement support, and ongoing career guidance. There are no hidden costs or additional fees.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            <span>Do you offer refunds if I don't pass the certification?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes, we offer a success guarantee. If you don't pass your certification exam after completing our program and following our study plan, we'll provide additional training at no cost or offer a partial refund based on our terms and conditions.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            <span>Can I switch between plans during my training?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Absolutely! You can upgrade your plan at any time during your training. We'll adjust your billing accordingly and you'll immediately gain access to the additional features and support included in your new plan.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            <span>Are there any additional costs for exam fees?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Exam fees for official certifications (like IELTS, OSCE, PLAB, USMLE) are paid directly to the examining bodies and are not included in our training fees. We provide detailed information about all associated costs upfront so there are no surprises.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            <span>Do you offer scholarships or financial aid?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes, we offer need-based scholarships and merit scholarships for exceptional candidates. We also have partnerships with financial institutions to provide education loans at competitive rates. Contact our admissions team to learn about available options.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            <span>What happens if I need to pause my training?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>We understand that life circumstances can change. You can pause your training for up to 6 months without penalty. During this time, you'll retain access to study materials and can resume your training when you're ready.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="pricing-cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Ready to Invest in Your Global Healthcare Career?</h2>
+                    <p>Join thousands of healthcare professionals who have transformed their careers with our proven training programs</p>
+                    
+                    <div class="cta-stats">
+                        <div class="cta-stat">
+                            <div class="stat-number">95%</div>
+                            <div class="stat-label">Success Rate</div>
+                        </div>
+                        <div class="cta-stat">
+                            <div class="stat-number">$75K+</div>
+                            <div class="stat-label">Average Salary Increase</div>
+                        </div>
+                        <div class="cta-stat">
+                            <div class="stat-number">6 Months</div>
+                            <div class="stat-label">Average Time to Placement</div>
+                        </div>
+                    </div>
+                    
+                    <div class="cta-buttons">
+                        <button class="cta-btn primary">
+                            Schedule Free Consultation
+                            <i class="fas fa-calendar"></i>
+                        </button>
+                        <button class="cta-btn secondary">
+                            Download Pricing Guide
+                            <i class="fas fa-download"></i>
+                        </button>
+                    </div>
+                    
+                    <div class="guarantee-badge">
+                        <i class="fas fa-shield-alt"></i>
+                        <span>30-Day Money Back Guarantee</span>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <div class="logo">
+                        <i class="fas fa-heartbeat"></i>
+                        <span>HealthCare EDGE</span>
+                    </div>
+                    <p>Empowering healthcare professionals to achieve global excellence through comprehensive training and certification programs.</p>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Programs</h4>
+                    <ul>
+                        <li><a href="nurse-edge.html">Nurse EDGE</a></li>
+                        <li><a href="doc-edge.html">Doc EDGE</a></li>
+                        <li><a href="allied-edge.html">Allied EDGE</a></li>
+                        <li><a href="fee-structure.html">Fee Structure</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Info</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> info@healthcareedge.com</li>
+                        <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Global Healthcare Center</li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="footer-bottom">
+                <p>&copy; 2025 HealthCare EDGE. All rights reserved. Empowering healthcare professionals worldwide.</p>
+            </div>
+        </div>
+    </footer>
+
+     <script src="/2006/training/scripts/script.js"></script>
+</body>
+</html>

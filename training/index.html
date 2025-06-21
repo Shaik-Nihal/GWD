@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Healthcare Training & Certification Portal - Empower Your Global Journey</title>
     <meta name="description" content="Professional healthcare training and certification programs for nurses, doctors, and allied health professionals seeking global opportunities.">
-    <link rel="stylesheet" href="style.css">
+   <link rel="stylesheet" href="/2006/training/style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
 </head>
 <body>
@@ -20,6 +20,7 @@
                     <li><a href="#home">Home</a></li>
                     <li><a href="#programs">Programs</a></li>
                     <li><a href="#testimonials">Success Stories</a></li>
+                    <li><a href="fee-structure.html">Pricing</a></li>
                     <li><a href="#contact">Contact</a></li>
                 </ul>
                 <button class="mobile-menu-toggle" aria-label="Toggle mobile menu">
@@ -52,6 +53,10 @@
                                 <i class="fas fa-star"></i>
                                 See Success Stories
                             </button>
+                            <button class="quick-btn" onclick="navigateToPage('fee-structure.html')">
+                                <i class="fas fa-dollar-sign"></i>
+                                View Pricing
+                            </button>
                         </div>
                     </div>
                     
@@ -67,6 +72,10 @@
                         <div class="stat">
                             <span class="stat-number">50+</span>
                             <span class="stat-label">Countries Served</span>
+                        </div>
+                        <div class="stat">
+                            <span class="stat-number">24/7</span>
+                            <span class="stat-label">Support Available</span>
                         </div>
                     </div>
                 </div>
@@ -94,7 +103,11 @@
                             <li><i class="fas fa-check"></i> Professional Etiquette</li>
                             <li><i class="fas fa-check"></i> Country-Specific Readiness</li>
                         </ul>
-                        <button class="card-btn" onclick="navigateToPage('/2006/training/nurse-edge.html')">
+                        <div class="card-stats">
+                            <span class="stat-item">2000+ Certified</span>
+                            <span class="stat-item">30+ Countries</span>
+                        </div>
+                        <button class="card-btn" onclick="navigateToPage('nurse-edge.html')">
                             Explore Nurse EDGE
                             <i class="fas fa-arrow-right"></i>
                         </button>
@@ -113,7 +126,11 @@
                             <li><i class="fas fa-check"></i> Licensing Support</li>
                             <li><i class="fas fa-check"></i> Country-Specific Readiness</li>
                         </ul>
-                        <button class="card-btn" onclick="navigateToPage('/2006/training/doc-edge.html')">
+                        <div class="card-stats">
+                            <span class="stat-item">1500+ Certified</span>
+                            <span class="stat-item">25+ Countries</span>
+                        </div>
+                        <button class="card-btn" onclick="navigateToPage('doc-edge.html')">
                             Explore Doc EDGE
                             <i class="fas fa-arrow-right"></i>
                         </button>
@@ -132,7 +149,11 @@
                             <li><i class="fas fa-check"></i> Professional Development</li>
                             <li><i class="fas fa-check"></i> Country-Specific Readiness</li>
                         </ul>
-                        <button class="card-btn" onclick="navigateToPage('/2006/training/allied-edge.html')">
+                        <div class="card-stats">
+                            <span class="stat-item">1500+ Certified</span>
+                            <span class="stat-item">20+ Countries</span>
+                        </div>
+                        <button class="card-btn" onclick="navigateToPage('allied-edge.html')">
                             Explore Allied EDGE
                             <i class="fas fa-arrow-right"></i>
                         </button>
@@ -171,6 +192,46 @@
                         </div>
                         <h4>Community</h4>
                         <p>Join a global network of certified healthcare professionals</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="why-choose-us">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Why Choose HealthCare EDGE?</h2>
+                    <p>We're more than just a training provider - we're your partners in global healthcare success</p>
+                </div>
+                
+                <div class="why-choose-grid">
+                    <div class="why-choose-item">
+                        <div class="why-icon">
+                            <i class="fas fa-award"></i>
+                        </div>
+                        <h4>Industry Recognition</h4>
+                        <p>Our certifications are recognized by healthcare institutions in over 50 countries worldwide.</p>
+                    </div>
+                    <div class="why-choose-item">
+                        <div class="why-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <h4>Flexible Learning</h4>
+                        <p>Study at your own pace with our flexible online and in-person training options.</p>
+                    </div>
+                    <div class="why-choose-item">
+                        <div class="why-icon">
+                            <i class="fas fa-handshake"></i>
+                        </div>
+                        <h4>Job Placement</h4>
+                        <p>Direct connections with healthcare employers and ongoing career support.</p>
+                    </div>
+                    <div class="why-choose-item">
+                        <div class="why-icon">
+                            <i class="fas fa-shield-alt"></i>
+                        </div>
+                        <h4>Success Guarantee</h4>
+                        <p>We're so confident in our programs, we offer a success guarantee or your money back.</p>
                     </div>
                 </div>
             </div>
@@ -252,6 +313,29 @@
                             </div>
                         </div>
                     </div>
+                    
+                    <div class="testimonial">
+                        <div class="testimonial-content">
+                            <blockquote>
+                                "The support team was incredible throughout my journey. Now I'm working as a radiographer in Sydney!"
+                            </blockquote>
+                            <div class="testimonial-author">
+                                <div class="author-avatar">
+                                    <img src="https://images.pexels.com/photos/5327647/pexels-photo-5327647.jpeg?auto=compress&cs=tinysrgb&w=150&h=150&fit=crop" alt="Ahmed Hassan">
+                                </div>
+                                <div class="author-info">
+                                    <h4>Ahmed Hassan</h4>
+                                    <p>Senior Radiographer, Sydney Hospital</p>
+                                    <div class="author-journey">
+                                        <span class="flag">🇪🇬</span>
+                                        <i class="fas fa-arrow-right"></i>
+                                        <span class="flag">🇦🇺</span>
+                                        <span>Egypt → Australia</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
                 </div>
                 
                 <div class="carousel-controls">
@@ -262,6 +346,7 @@
                         <span class="indicator active" onclick="currentTestimonial(1)"></span>
                         <span class="indicator" onclick="currentTestimonial(2)"></span>
                         <span class="indicator" onclick="currentTestimonial(3)"></span>
+                        <span class="indicator" onclick="currentTestimonial(4)"></span>
                     </div>
                     <button class="carousel-btn next" onclick="nextTestimonial()">
                         <i class="fas fa-chevron-right"></i>
@@ -274,7 +359,7 @@
             <div class="container">
                 <div class="section-header">
                     <h2>Alumni Spotlight</h2>
-                    <p>2,000+ professionals certified across 18+ countries</p>
+                    <p>5,000+ professionals certified across 50+ countries</p>
                 </div>
                 
                 <div class="alumni-grid">
@@ -333,21 +418,55 @@
             </div>
         </section>
 
+        <section class="global-presence">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Our Global Presence</h2>
+                    <p>Connecting healthcare professionals worldwide</p>
+                </div>
+                
+                <div class="presence-stats">
+                    <div class="presence-item">
+                        <div class="presence-number">50+</div>
+                        <div class="presence-label">Countries</div>
+                    </div>
+                    <div class="presence-item">
+                        <div class="presence-number">200+</div>
+                        <div class="presence-label">Partner Hospitals</div>
+                    </div>
+                    <div class="presence-item">
+                        <div class="presence-number">15+</div>
+                        <div class="presence-label">Training Centers</div>
+                    </div>
+                    <div class="presence-item">
+                        <div class="presence-number">24/7</div>
+                        <div class="presence-label">Global Support</div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section class="motivation-bar">
             <div class="container">
                 <div class="motivation-content">
                     <h3>Join Thousands of Certified Healthcare Professionals</h3>
                     <p>Your journey to global healthcare excellence starts with a single step</p>
-                    <button class="cta-btn" onclick="scrollToPrograms()">
-                        Start Your Journey Today
-                        <i class="fas fa-rocket"></i>
-                    </button>
+                    <div class="motivation-buttons">
+                        <button class="cta-btn primary" onclick="scrollToPrograms()">
+                            Start Your Journey Today
+                            <i class="fas fa-rocket"></i>
+                        </button>
+                        <button class="cta-btn secondary" onclick="navigateToPage('fee-structure.html')">
+                            View Pricing Plans
+                            <i class="fas fa-dollar-sign"></i>
+                        </button>
+                    </div>
                 </div>
             </div>
         </section>
     </main>
 
-    <footer class="footer">
+    <footer class="footer" id="contact">
         <div class="container">
             <div class="footer-content">
                 <div class="footer-section">
@@ -356,6 +475,12 @@
                         <span>HealthCare EDGE</span>
                     </div>
                     <p>Empowering healthcare professionals to achieve global excellence through comprehensive training and certification programs.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
                 </div>
                 
                 <div class="footer-section">
@@ -364,6 +489,17 @@
                         <li><a href="nurse-edge.html">Nurse EDGE</a></li>
                         <li><a href="doc-edge.html">Doc EDGE</a></li>
                         <li><a href="allied-edge.html">Allied EDGE</a></li>
+                        <li><a href="fee-structure.html">Fee Structure</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Support</h4>
+                    <ul>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Live Chat</a></li>
+                        <li><a href="#">Documentation</a></li>
+                        <li><a href="#">Community Forum</a></li>
                     </ul>
                 </div>
                 
@@ -373,6 +509,7 @@
                         <li><i class="fas fa-envelope"></i> info@healthcareedge.com</li>
                         <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
                         <li><i class="fas fa-map-marker-alt"></i> Global Healthcare Center</li>
+                        <li><i class="fas fa-clock"></i> 24/7 Support Available</li>
                     </ul>
                 </div>
             </div>
@@ -383,6 +520,6 @@
         </div>
     </footer>
 
-    <script src="/2006/training/scripts/script.js"></script>
+     <script src="/2006/training/scripts/script.js"></script>
 </body>
 </html>

@@ -14,6 +14,9 @@ function initializeApp() {
     setupCardAnimations();
     setupFAQAccordion();
     setupScrollAnimations();
+    initializeCourseSearcher();
+    initializePricingToggle();
+    initializeCountryTabs();
 }
 
 // Mobile Menu Toggle
@@ -138,7 +141,7 @@ function setupSmoothScrolling() {
 
 // Card Animations
 function setupCardAnimations() {
-    const cards = document.querySelectorAll('.edge-card, .module-card, .highlight-card, .certification-card, .testimonial-card, .service-card, .alumni-card');
+    const cards = document.querySelectorAll('.edge-card, .overview-card, .highlight-item, .testimonial-card, .plan-card, .course-card, .alumni-card');
     
     // Intersection Observer for fade-in animations
     const observerOptions = {
@@ -243,19 +246,500 @@ function setupScrollAnimations() {
     });
 }
 
+// Course Searcher Functionality
+let allCourses = [];
+let filteredCourses = [];
+
+function initializeCourseSearcher() {
+    // Generate sample course data
+    generateCourseData();
+    
+    // Initial render
+    renderCourses();
+}
+
+function generateCourseData() {
+    const currentPage = window.location.pathname;
+    
+    if (currentPage.includes('nurse-edge')) {
+        allCourses = generateNurseCourses();
+    } else if (currentPage.includes('doc-edge')) {
+        allCourses = generateDocCourses();
+    } else if (currentPage.includes('allied-edge')) {
+        allCourses = generateAlliedCourses();
+    }
+    
+    filteredCourses = [...allCourses];
+}
+
+function generateNurseCourses() {
+    return [
+        {
+            id: 1,
+            title: "UK Nursing Certification",
+            country: "uk",
+            specialty: "general",
+            experience: "fresh-graduate",
+            duration: "6-months",
+            price: 2499,
+            description: "Complete OSCE preparation and NMC registration support for UK nursing practice.",
+            successRate: 96,
+            popularity: 95
+        },
+        {
+            id: 2,
+            title: "Germany Nursing Program",
+            country: "germany",
+            specialty: "icu",
+            experience: "1-3-years",
+            duration: "12-months",
+            price: 2799,
+            description: "German language training and Anerkennung process for nursing in Germany.",
+            successRate: 94,
+            popularity: 88
+        },
+        {
+            id: 3,
+            title: "Canada RN Certification",
+            country: "canada",
+            specialty: "emergency",
+            experience: "3-5-years",
+            duration: "6-months",
+            price: 2299,
+            description: "NCLEX-RN preparation and provincial registration for Canadian nursing practice.",
+            successRate: 92,
+            popularity: 90
+        },
+        {
+            id: 4,
+            title: "Australia AHPRA Registration",
+            country: "australia",
+            specialty: "pediatric",
+            experience: "1-3-years",
+            duration: "3-months",
+            price: 1999,
+            description: "Skills assessment and AHPRA registration for nursing in Australia.",
+            successRate: 95,
+            popularity: 87
+        },
+        {
+            id: 5,
+            title: "USA NCLEX-RN Program",
+            country: "usa",
+            specialty: "mental-health",
+            experience: "fresh-graduate",
+            duration: "6-months",
+            price: 2199,
+            description: "Comprehensive NCLEX-RN preparation and state licensing support.",
+            successRate: 89,
+            popularity: 85
+        },
+        {
+            id: 6,
+            title: "New Zealand Nursing",
+            country: "new-zealand",
+            specialty: "surgical",
+            experience: "5-plus-years",
+            duration: "3-months",
+            price: 1899,
+            description: "NCNZ registration and competency assessment for New Zealand nursing.",
+            successRate: 93,
+            popularity: 82
+        }
+    ];
+}
+
+function generateDocCourses() {
+    return [
+        {
+            id: 1,
+            title: "UK PLAB Certification",
+            country: "uk",
+            specialty: "internal-medicine",
+            experience: "resident",
+            examType: "plab",
+            price: 4999,
+            description: "Complete PLAB 1 & 2 preparation with GMC registration support.",
+            successRate: 92,
+            popularity: 95
+        },
+        {
+            id: 2,
+            title: "USA USMLE Program",
+            country: "usa",
+            specialty: "surgery",
+            experience: "specialist",
+            examType: "usmle",
+            price: 6999,
+            description: "USMLE Step 1, 2 & 3 preparation with residency match support.",
+            successRate: 89,
+            popularity: 93
+        },
+        {
+            id: 3,
+            title: "Canada Medical Licensing",
+            country: "canada",
+            specialty: "pediatrics",
+            experience: "fresh-graduate",
+            examType: "licensing",
+            price: 3999,
+            description: "MCCEE and NAC-OSCE preparation for Canadian medical practice.",
+            successRate: 87,
+            popularity: 88
+        },
+        {
+            id: 4,
+            title: "Australia AMC Pathway",
+            country: "australia",
+            specialty: "cardiology",
+            experience: "consultant",
+            examType: "licensing",
+            price: 4499,
+            description: "AMC CAT and clinical examination preparation for Australian practice.",
+            successRate: 91,
+            popularity: 86
+        },
+        {
+            id: 5,
+            title: "Germany Medical License",
+            country: "germany",
+            specialty: "emergency",
+            experience: "resident",
+            examType: "licensing",
+            price: 5499,
+            description: "Approbation process and Fachsprachenprüfung for German medical practice.",
+            successRate: 88,
+            popularity: 84
+        },
+        {
+            id: 6,
+            title: "NHS Fellowship Program",
+            country: "uk",
+            specialty: "radiology",
+            experience: "specialist",
+            examType: "fellowship",
+            price: 7999,
+            description: "Exclusive NHS fellowship application support and placement assistance.",
+            successRate: 85,
+            popularity: 90
+        }
+    ];
+}
+
+function generateAlliedCourses() {
+    return [
+        {
+            id: 1,
+            title: "UK Physiotherapy Registration",
+            country: "uk",
+            profession: "physiotherapy",
+            experience: "1-3-years",
+            certification: "licensing",
+            price: 1999,
+            description: "HCPC registration and skills assessment for UK physiotherapy practice.",
+            successRate: 94,
+            popularity: 92
+        },
+        {
+            id: 2,
+            title: "Canada OT Certification",
+            country: "canada",
+            profession: "occupational-therapy",
+            experience: "3-5-years",
+            certification: "skills-assessment",
+            price: 2299,
+            description: "CAOT credential recognition and provincial registration support.",
+            successRate: 91,
+            popularity: 89
+        },
+        {
+            id: 3,
+            title: "Australia Radiography License",
+            country: "australia",
+            profession: "radiography",
+            experience: "fresh-graduate",
+            certification: "licensing",
+            price: 1799,
+            description: "AHPRA registration and skills assessment for Australian radiography.",
+            successRate: 96,
+            popularity: 87
+        },
+        {
+            id: 4,
+            title: "Germany Lab Technology",
+            country: "germany",
+            profession: "laboratory",
+            experience: "5-plus-years",
+            certification: "bridging",
+            price: 2199,
+            description: "Professional recognition and bridging program for German lab practice.",
+            successRate: 89,
+            popularity: 85
+        },
+        {
+            id: 5,
+            title: "New Zealand Speech Therapy",
+            country: "new-zealand",
+            profession: "speech-therapy",
+            experience: "1-3-years",
+            certification: "licensing",
+            price: 2099,
+            description: "NZSTA registration and competency assessment for speech therapy practice.",
+            successRate: 93,
+            popularity: 83
+        },
+        {
+            id: 6,
+            title: "USA Pharmacy Certification",
+            country: "usa",
+            profession: "pharmacy",
+            experience: "specialist",
+            certification: "licensing",
+            price: 3499,
+            description: "FPGEC certification and NAPLEX preparation for US pharmacy practice.",
+            successRate: 88,
+            popularity: 86
+        }
+    ];
+}
+
+function filterCourses() {
+    const countryFilter = document.getElementById('country-filter')?.value || '';
+    const experienceFilter = document.getElementById('experience-filter')?.value || '';
+    const specialtyFilter = document.getElementById('specialty-filter')?.value || '';
+    const durationFilter = document.getElementById('duration-filter')?.value || '';
+    const examTypeFilter = document.getElementById('exam-type-filter')?.value || '';
+    const professionFilter = document.getElementById('profession-filter')?.value || '';
+    const certificationFilter = document.getElementById('certification-filter')?.value || '';
+    
+    filteredCourses = allCourses.filter(course => {
+        return (!countryFilter || course.country === countryFilter) &&
+               (!experienceFilter || course.experience === experienceFilter) &&
+               (!specialtyFilter || course.specialty === specialtyFilter) &&
+               (!durationFilter || course.duration === durationFilter) &&
+               (!examTypeFilter || course.examType === examTypeFilter) &&
+               (!professionFilter || course.profession === professionFilter) &&
+               (!certificationFilter || course.certification === certificationFilter);
+    });
+    
+    renderCourses();
+}
+
+function clearFilters() {
+    // Reset all filter dropdowns
+    const filters = ['country-filter', 'experience-filter', 'specialty-filter', 'duration-filter', 'exam-type-filter', 'profession-filter', 'certification-filter'];
+    filters.forEach(filterId => {
+        const filter = document.getElementById(filterId);
+        if (filter) {
+            filter.value = '';
+        }
+    });
+    
+    // Reset filtered courses
+    filteredCourses = [...allCourses];
+    renderCourses();
+}
+
+function sortCourses() {
+    const sortBy = document.getElementById('sort-by')?.value || 'popularity';
+    
+    filteredCourses.sort((a, b) => {
+        switch (sortBy) {
+            case 'price':
+                return a.price - b.price;
+            case 'duration':
+                const durationOrder = {'3-months': 1, '6-months': 2, '12-months': 3, '18-months': 4};
+                return (durationOrder[a.duration] || 5) - (durationOrder[b.duration] || 5);
+            case 'success-rate':
+                return b.successRate - a.successRate;
+            case 'popularity':
+            default:
+                return b.popularity - a.popularity;
+        }
+    });
+    
+    renderCourses();
+}
+
+function renderCourses() {
+    const coursesGrid = document.getElementById('courses-grid');
+    const resultsCount = document.getElementById('results-count');
+    
+    if (!coursesGrid) return;
+    
+    // Update results count
+    if (resultsCount) {
+        resultsCount.textContent = `${filteredCourses.length} pathways found`;
+    }
+    
+    // Clear existing courses
+    coursesGrid.innerHTML = '';
+    
+    // Render filtered courses
+    filteredCourses.forEach(course => {
+        const courseCard = createCourseCard(course);
+        coursesGrid.appendChild(courseCard);
+    });
+}
+
+function createCourseCard(course) {
+    const card = document.createElement('div');
+    card.className = 'course-card';
+    
+    const countryFlags = {
+        'uk': '🇬🇧',
+        'germany': '🇩🇪',
+        'canada': '🇨🇦',
+        'australia': '🇦🇺',
+        'usa': '🇺🇸',
+        'new-zealand': '🇳🇿',
+        'ireland': '🇮🇪',
+        'netherlands': '🇳🇱',
+        'singapore': '🇸🇬',
+        'uae': '🇦🇪'
+    };
+    
+    card.innerHTML = `
+        <div class="course-header">
+            <div>
+                <h4 class="course-title">${course.title}</h4>
+                <div class="course-country">${countryFlags[course.country] || '🌍'} ${course.country.replace('-', ' ').toUpperCase()}</div>
+            </div>
+            <div class="course-badge">${course.successRate}% Success</div>
+        </div>
+        <div class="course-details">
+            <p class="course-description">${course.description}</p>
+            <div class="course-meta">
+                <div class="meta-item">
+                    <i class="fas fa-clock"></i>
+                    <span>${course.duration?.replace('-', ' ') || 'Flexible'}</span>
+                </div>
+                <div class="meta-item">
+                    <i class="fas fa-user"></i>
+                    <span>${course.experience?.replace('-', ' ') || 'All levels'}</span>
+                </div>
+                <div class="meta-item">
+                    <i class="fas fa-star"></i>
+                    <span>${course.popularity}% Popular</span>
+                </div>
+                <div class="meta-item">
+                    <i class="fas fa-certificate"></i>
+                    <span>${course.specialty || course.profession || course.examType || 'General'}</span>
+                </div>
+            </div>
+        </div>
+        <div class="course-price">
+            <div class="price">$${course.price.toLocaleString()}</div>
+            <button class="view-details-btn" onclick="viewCourseDetails(${course.id})">View Details</button>
+        </div>
+    `;
+    
+    return card;
+}
+
+function viewCourseDetails(courseId) {
+    // Find the course
+    const course = allCourses.find(c => c.id === courseId);
+    if (!course) return;
+    
+    // Show course details (you can implement a modal or redirect to a details page)
+    alert(`Course Details:\n\nTitle: ${course.title}\nPrice: $${course.price.toLocaleString()}\nSuccess Rate: ${course.successRate}%\n\nDescription: ${course.description}`);
+}
+
+// Make filter functions globally available
+window.filterCourses = filterCourses;
+window.clearFilters = clearFilters;
+window.sortCourses = sortCourses;
+window.viewCourseDetails = viewCourseDetails;
+
+// Pricing Toggle Functionality
+function initializePricingToggle() {
+    const toggle = document.getElementById('pricing-toggle');
+    if (toggle) {
+        toggle.addEventListener('change', togglePricing);
+    }
+}
+
+function togglePricing() {
+    const toggle = document.getElementById('pricing-toggle');
+    const monthlyPrices = document.querySelectorAll('.monthly-price');
+    const annualPrices = document.querySelectorAll('.annual-price');
+    const monthlyPeriods = document.querySelectorAll('.monthly-period');
+    const annualPeriods = document.querySelectorAll('.annual-period');
+    
+    if (toggle && toggle.checked) {
+        // Show annual pricing
+        monthlyPrices.forEach(price => price.style.display = 'none');
+        annualPrices.forEach(price => price.style.display = 'inline');
+        monthlyPeriods.forEach(period => period.style.display = 'none');
+        annualPeriods.forEach(period => period.style.display = 'inline');
+    } else {
+        // Show monthly pricing
+        monthlyPrices.forEach(price => price.style.display = 'inline');
+        annualPrices.forEach(price => price.style.display = 'none');
+        monthlyPeriods.forEach(period => period.style.display = 'inline');
+        annualPeriods.forEach(period => period.style.display = 'none');
+    }
+}
+
+// Make togglePricing globally available
+window.togglePricing = togglePricing;
+
+// Country Tabs Functionality
+function initializeCountryTabs() {
+    const tabs = document.querySelectorAll('.tab-btn');
+    if (tabs.length > 0) {
+        // Show first tab by default
+        showCountryPricing('uk');
+    }
+}
+
+function showCountryPricing(country) {
+    // Hide all country pricing sections
+    const allPricing = document.querySelectorAll('.country-pricing');
+    allPricing.forEach(pricing => {
+        pricing.classList.remove('active');
+    });
+    
+    // Remove active class from all tabs
+    const allTabs = document.querySelectorAll('.tab-btn');
+    allTabs.forEach(tab => {
+        tab.classList.remove('active');
+    });
+    
+    // Show selected country pricing
+    const selectedPricing = document.getElementById(`${country}-pricing`);
+    if (selectedPricing) {
+        selectedPricing.classList.add('active');
+    }
+    
+    // Activate selected tab
+    const selectedTab = document.querySelector(`[onclick="showCountryPricing('${country}')"]`);
+    if (selectedTab) {
+        selectedTab.classList.add('active');
+    }
+}
+
+// Make showCountryPricing globally available
+window.showCountryPricing = showCountryPricing;
+
 // Navigation Functions
 function navigateToPage(url) {
     // Add loading state
     const button = event.target.closest('button');
-    const originalText = button.innerHTML;
-    
-    button.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Loading...';
-    button.disabled = true;
-    
-    // Simulate loading delay for better UX
-    setTimeout(() => {
+    if (button) {
+        const originalText = button.innerHTML;
+        
+        button.innerHTML = '<i class="fas fa-spinner fa-spin"></i> Loading...';
+        button.disabled = true;
+        
+        // Simulate loading delay for better UX
+        setTimeout(() => {
+            window.location.href = url;
+        }, 500);
+    } else {
         window.location.href = url;
-    }, 500);
+    }
 }
 
 // Scroll to Programs Section
@@ -588,6 +1072,11 @@ if (typeof module !== 'undefined' && module.exports) {
         debounce,
         throttle,
         trackEvent,
-        toggleFAQ
+        toggleFAQ,
+        filterCourses,
+        clearFilters,
+        sortCourses,
+        togglePricing,
+        showCountryPricing
     };
 }
