@@ -5,17 +5,20 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Healthcare Training & Certification Portal - Empower Your Global Journey</title>
     <meta name="description" content="Professional healthcare training and certification programs for nurses, doctors, and allied health professionals seeking global opportunities.">
-   <link rel="stylesheet" href="/2006/training/style.css">
+    <link rel="stylesheet" href="/training/style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
         <div class="container">
             <nav class="nav">
-                <div class="logo">
+                <a href="#home" class="logo">
                     <i class="fas fa-heartbeat"></i>
                     <span>HealthCare EDGE</span>
-                </div>
+                </a>
                 <ul class="nav-links">
                     <li><a href="#home">Home</a></li>
                     <li><a href="#programs">Programs</a></li>
@@ -32,7 +35,7 @@
         </div>
     </header>
 
-    <main>
+    <main id="main">
         <section class="hero" id="home">
             <div class="hero-background">
                 <div class="hero-overlay"></div>
@@ -40,7 +43,7 @@
             <div class="container">
                 <div class="hero-content">
                     <h1 class="hero-title">Empower Your Global Healthcare Journey</h1>
-                    <p class="hero-subtitle">From aspirations to accreditation — your journey to serve beyond borders begins here</p>
+                    <p class="hero-subtitle">From aspirations to accreditation — your journey to serve beyond borders begins here with world-class training and certification programs</p>
                     
                     <div class="quick-action-nav">
                         <h3>How can we help you today?</h3>
@@ -86,7 +89,7 @@
             <div class="container">
                 <div class="section-header">
                     <h2>Choose Your Path to Excellence</h2>
-                    <p>Discover specialized training programs designed for your healthcare profession</p>
+                    <p>Discover specialized training programs designed for your healthcare profession with comprehensive support and guaranteed outcomes</p>
                 </div>
                 
                 <div class="edge-cards">
@@ -96,12 +99,13 @@
                         </div>
                         <h3>Nurse EDGE</h3>
                         <p class="card-tagline">OSCE · Language · Soft Skills</p>
-                        <p class="card-description">Comprehensive nursing certification and skills development for global opportunities</p>
+                        <p class="card-description">Comprehensive nursing certification and skills development for global opportunities with personalized mentorship</p>
                         <ul class="card-features">
                             <li><i class="fas fa-check"></i> Clinical Certifications (OSCE)</li>
                             <li><i class="fas fa-check"></i> Language & Communication</li>
                             <li><i class="fas fa-check"></i> Professional Etiquette</li>
                             <li><i class="fas fa-check"></i> Country-Specific Readiness</li>
+                            <li><i class="fas fa-check"></i> Job Placement Guarantee</li>
                         </ul>
                         <div class="card-stats">
                             <span class="stat-item">2000+ Certified</span>
@@ -119,12 +123,13 @@
                         </div>
                         <h3>Doc EDGE</h3>
                         <p class="card-tagline">PLAB · USMLE · NHS Fellowships</p>
-                        <p class="card-description">Advanced medical certification and fellowship programs for practicing physicians</p>
+                        <p class="card-description">Advanced medical certification and fellowship programs for practicing physicians with research opportunities</p>
                         <ul class="card-features">
                             <li><i class="fas fa-check"></i> Clinical Certifications (PLAB, USMLE)</li>
                             <li><i class="fas fa-check"></i> NHS Fellowships</li>
                             <li><i class="fas fa-check"></i> Licensing Support</li>
-                            <li><i class="fas fa-check"></i> Country-Specific Readiness</li>
+                            <li><i class="fas fa-check"></i> Research Opportunities</li>
+                            <li><i class="fas fa-check"></i> Career Advancement</li>
                         </ul>
                         <div class="card-stats">
                             <span class="stat-item">1500+ Certified</span>
@@ -142,12 +147,13 @@
                         </div>
                         <h3>Allied EDGE</h3>
                         <p class="card-tagline">Licensing · Language · Leadership</p>
-                        <p class="card-description">Specialized training for allied health professionals seeking international recognition</p>
+                        <p class="card-description">Specialized training for allied health professionals seeking international recognition and career growth</p>
                         <ul class="card-features">
-                            <li><i class="fas fa-check"></i> Clinical Certifications</li>
-                            <li><i class="fas fa-check"></i> Licensing Assistance</li>
-                            <li><i class="fas fa-check"></i> Professional Development</li>
-                            <li><i class="fas fa-check"></i> Country-Specific Readiness</li>
+                            <li><i class="fas fa-check"></i> Professional Licensing</li>
+                            <li><i class="fas fa-check"></i> Skills Assessment</li>
+                            <li><i class="fas fa-check"></i> Leadership Development</li>
+                            <li><i class="fas fa-check"></i> Global Recognition</li>
+                            <li><i class="fas fa-check"></i> Career Mentorship</li>
                         </ul>
                         <div class="card-stats">
                             <span class="stat-item">1500+ Certified</span>
@@ -162,36 +168,181 @@
             </div>
         </section>
 
+        <section class="learning-path">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Your Learning Journey</h2>
+                    <p>Follow our proven 5-step pathway to global healthcare success</p>
+                </div>
+                
+                <div class="path-container">
+                    <div class="path-line"></div>
+                    <div class="path-steps">
+                        <div class="path-step" onclick="showPathStep(0)">
+                            <i class="fas fa-user-check"></i>
+                            <span>Assessment</span>
+                        </div>
+                        <div class="path-step" onclick="showPathStep(1)">
+                            <i class="fas fa-book-open"></i>
+                            <span>Training</span>
+                        </div>
+                        <div class="path-step" onclick="showPathStep(2)">
+                            <i class="fas fa-certificate"></i>
+                            <span>Certification</span>
+                        </div>
+                        <div class="path-step" onclick="showPathStep(3)">
+                            <i class="fas fa-briefcase"></i>
+                            <span>Placement</span>
+                        </div>
+                        <div class="path-step" onclick="showPathStep(4)">
+                            <i class="fas fa-rocket"></i>
+                            <span>Success</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="path-details">
+                    <div class="step-detail active">
+                        <h4>Comprehensive Skills Assessment</h4>
+                        <p>We begin with a thorough evaluation of your current skills, experience, and career goals to create a personalized learning pathway that maximizes your potential for success.</p>
+                    </div>
+                    <div class="step-detail">
+                        <h4>Intensive Training Program</h4>
+                        <p>Engage in our comprehensive training modules covering clinical skills, language proficiency, cultural competency, and professional development with expert instructors and cutting-edge resources.</p>
+                    </div>
+                    <div class="step-detail">
+                        <h4>International Certification</h4>
+                        <p>Achieve globally recognized certifications through our proven preparation programs with high success rates and comprehensive exam support including mock tests and personalized feedback.</p>
+                    </div>
+                    <div class="step-detail">
+                        <h4>Job Placement Support</h4>
+                        <p>Benefit from our extensive network of healthcare partners worldwide with guaranteed job placement assistance, interview preparation, and ongoing career support throughout your transition.</p>
+                    </div>
+                    <div class="step-detail">
+                        <h4>Global Career Success</h4>
+                        <p>Launch your international healthcare career with confidence, backed by our lifetime alumni network, continuous professional development opportunities, and ongoing mentorship support.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section class="feature-highlights">
             <div class="container">
+                <div class="section-header">
+                    <h2>Why Healthcare Professionals Choose Us</h2>
+                    <p>Discover the advantages that set us apart in healthcare education and certification</p>
+                </div>
+                
                 <div class="highlights-grid">
                     <div class="highlight-item">
                         <div class="highlight-icon">
                             <i class="fas fa-globe"></i>
                         </div>
-                        <h4>Country Guidance</h4>
-                        <p>Navigate healthcare systems worldwide with expert support</p>
+                        <h4>Global Recognition</h4>
+                        <p>Our certifications are recognized by healthcare institutions in over 50 countries worldwide, opening doors to unlimited opportunities</p>
                     </div>
                     <div class="highlight-item">
                         <div class="highlight-icon">
                             <i class="fas fa-graduation-cap"></i>
                         </div>
-                        <h4>Certification Prep</h4>
-                        <p>Comprehensive preparation for international healthcare certifications</p>
+                        <h4>Expert Faculty</h4>
+                        <p>Learn from industry-leading professionals and certified instructors with decades of international healthcare experience</p>
                     </div>
                     <div class="highlight-item">
                         <div class="highlight-icon">
                             <i class="fas fa-comments"></i>
                         </div>
-                        <h4>Mentor Support</h4>
-                        <p>One-on-one guidance from experienced healthcare professionals</p>
+                        <h4>Personalized Support</h4>
+                        <p>Receive one-on-one mentorship and guidance throughout your journey with dedicated support specialists</p>
                     </div>
                     <div class="highlight-item">
                         <div class="highlight-icon">
                             <i class="fas fa-users"></i>
                         </div>
-                        <h4>Community</h4>
-                        <p>Join a global network of certified healthcare professionals</p>
+                        <h4>Alumni Network</h4>
+                        <p>Join a thriving community of 5000+ certified professionals working across the globe with ongoing networking opportunities</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="interactive-features">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Innovative Learning Experience</h2>
+                    <p>Cutting-edge technology and methodologies for superior learning outcomes</p>
+                </div>
+                
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-image">
+                            <i class="fas fa-vr-cardboard"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Virtual Reality Training</h4>
+                            <p>Immersive VR simulations for clinical procedures and patient interactions, providing safe practice environments before real-world application.</p>
+                            <a href="#" class="feature-link">
+                                Learn More <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-image">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>AI-Powered Learning</h4>
+                            <p>Personalized learning paths powered by artificial intelligence that adapts to your learning style and pace for optimal results.</p>
+                            <a href="#" class="feature-link">
+                                Discover More <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-image">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Mobile Learning Platform</h4>
+                            <p>Study anywhere, anytime with our comprehensive mobile app featuring offline content, progress tracking, and interactive exercises.</p>
+                            <a href="#" class="feature-link">
+                                Download App <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="stats-counter">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Our Impact in Numbers</h2>
+                    <p>Real results that demonstrate our commitment to your success</p>
+                </div>
+                
+                <div class="stats-grid">
+                    <div class="stat-counter">
+                        <span class="counter-number">5000</span>
+                        <div class="counter-label">Professionals Certified</div>
+                        <div class="counter-description">Across all healthcare disciplines</div>
+                    </div>
+                    <div class="stat-counter">
+                        <span class="counter-number">95</span>
+                        <div class="counter-label">Success Rate (%)</div>
+                        <div class="counter-description">First-time certification pass rate</div>
+                    </div>
+                    <div class="stat-counter">
+                        <span class="counter-number">50</span>
+                        <div class="counter-label">Countries Served</div>
+                        <div class="counter-description">Global placement opportunities</div>
+                    </div>
+                    <div class="stat-counter">
+                        <span class="counter-number">24</span>
+                        <div class="counter-label">Support Hours</div>
+                        <div class="counter-description">Round-the-clock assistance</div>
                     </div>
                 </div>
             </div>
@@ -210,28 +361,68 @@
                             <i class="fas fa-award"></i>
                         </div>
                         <h4>Industry Recognition</h4>
-                        <p>Our certifications are recognized by healthcare institutions in over 50 countries worldwide.</p>
+                        <p>Our certifications are recognized by healthcare institutions in over 50 countries worldwide, ensuring your credentials are valued globally.</p>
                     </div>
                     <div class="why-choose-item">
                         <div class="why-icon">
                             <i class="fas fa-clock"></i>
                         </div>
                         <h4>Flexible Learning</h4>
-                        <p>Study at your own pace with our flexible online and in-person training options.</p>
+                        <p>Study at your own pace with our flexible online and in-person training options designed for working professionals.</p>
                     </div>
                     <div class="why-choose-item">
                         <div class="why-icon">
                             <i class="fas fa-handshake"></i>
                         </div>
-                        <h4>Job Placement</h4>
-                        <p>Direct connections with healthcare employers and ongoing career support.</p>
+                        <h4>Job Placement Guarantee</h4>
+                        <p>Direct connections with healthcare employers and guaranteed job placement assistance with our 95% success rate.</p>
                     </div>
                     <div class="why-choose-item">
                         <div class="why-icon">
                             <i class="fas fa-shield-alt"></i>
                         </div>
                         <h4>Success Guarantee</h4>
-                        <p>We're so confident in our programs, we offer a success guarantee or your money back.</p>
+                        <p>We're so confident in our programs, we offer a success guarantee or your money back with comprehensive support.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="industry-partnerships">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Trusted by Leading Healthcare Institutions</h2>
+                    <p>Our partnerships ensure direct pathways to employment opportunities worldwide</p>
+                </div>
+                
+                <div class="partners-grid">
+                    <div class="partner-card">
+                        <div class="partner-logo">
+                            <i class="fas fa-hospital"></i>
+                        </div>
+                        <h5>NHS Trusts</h5>
+                        <p>Direct partnerships with 50+ NHS trusts across the UK</p>
+                    </div>
+                    <div class="partner-card">
+                        <div class="partner-logo">
+                            <i class="fas fa-building"></i>
+                        </div>
+                        <h5>Private Hospitals</h5>
+                        <p>Exclusive agreements with leading private healthcare groups</p>
+                    </div>
+                    <div class="partner-card">
+                        <div class="partner-logo">
+                            <i class="fas fa-university"></i>
+                        </div>
+                        <h5>Medical Universities</h5>
+                        <p>Academic partnerships for continuing education and research</p>
+                    </div>
+                    <div class="partner-card">
+                        <div class="partner-logo">
+                            <i class="fas fa-globe-americas"></i>
+                        </div>
+                        <h5>International Bodies</h5>
+                        <p>Recognized by global healthcare regulatory organizations</p>
                     </div>
                 </div>
             </div>
@@ -248,7 +439,7 @@
                     <div class="testimonial active">
                         <div class="testimonial-content">
                             <blockquote>
-                                "In 3 months I passed OSCE and now serve in Berlin. The language training and cultural preparation made all the difference."
+                                In just 3 months I passed OSCE and now serve in Berlin. The language training and cultural preparation made all the difference. The support team was incredible throughout my journey.
                             </blockquote>
                             <div class="testimonial-author">
                                 <div class="author-avatar">
@@ -271,7 +462,7 @@
                     <div class="testimonial">
                         <div class="testimonial-content">
                             <blockquote>
-                                "Doc EDGE helped me pass USMLE and secure a residency in New York. The fellowship guidance was exceptional."
+                                Doc EDGE helped me pass USMLE and secure a residency in New York. The fellowship guidance was exceptional and opened doors I never thought possible.
                             </blockquote>
                             <div class="testimonial-author">
                                 <div class="author-avatar">
@@ -294,7 +485,7 @@
                     <div class="testimonial">
                         <div class="testimonial-content">
                             <blockquote>
-                                "I never imagined I'd be working in Toronto as a physiotherapist. Allied EDGE made my dream a reality."
+                                I never imagined I'd be working in Toronto as a physiotherapist. Allied EDGE made my dream a reality with comprehensive support and mentorship.
                             </blockquote>
                             <div class="testimonial-author">
                                 <div class="author-avatar">
@@ -317,7 +508,7 @@
                     <div class="testimonial">
                         <div class="testimonial-content">
                             <blockquote>
-                                "The support team was incredible throughout my journey. Now I'm working as a radiographer in Sydney!"
+                                The support team was incredible throughout my journey. Now I'm working as a radiographer in Sydney with amazing career prospects!
                             </blockquote>
                             <div class="testimonial-author">
                                 <div class="author-avatar">
@@ -359,7 +550,7 @@
             <div class="container">
                 <div class="section-header">
                     <h2>Alumni Spotlight</h2>
-                    <p>5,000+ professionals certified across 50+ countries</p>
+                    <p>5,000+ professionals certified across 50+ countries making a difference worldwide</p>
                 </div>
                 
                 <div class="alumni-grid">
@@ -368,7 +559,7 @@
                             <img src="https://images.pexels.com/photos/5327656/pexels-photo-5327656.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" alt="Dr. Sarah Chen">
                         </div>
                         <h4>Dr. Sarah Chen</h4>
-                        <p>Cardiologist, Royal London Hospital</p>
+                        <p>Consultant Cardiologist, Royal London Hospital</p>
                         <div class="alumni-location">
                             <span class="flag">🇨🇳</span>
                             <i class="fas fa-arrow-right"></i>
@@ -381,7 +572,7 @@
                             <img src="https://images.pexels.com/photos/6129507/pexels-photo-6129507.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" alt="James Wilson">
                         </div>
                         <h4>James Wilson</h4>
-                        <p>ICU Nurse, Sydney Hospital</p>
+                        <p>ICU Nurse Manager, Sydney Hospital</p>
                         <div class="alumni-location">
                             <span class="flag">🇿🇦</span>
                             <i class="fas fa-arrow-right"></i>
@@ -394,7 +585,7 @@
                             <img src="https://images.pexels.com/photos/5327580/pexels-photo-5327580.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" alt="Dr. Priya Sharma">
                         </div>
                         <h4>Dr. Priya Sharma</h4>
-                        <p>Pediatrician, Mayo Clinic</p>
+                        <p>Research Fellow, Mayo Clinic</p>
                         <div class="alumni-location">
                             <span class="flag">🇮🇳</span>
                             <i class="fas fa-arrow-right"></i>
@@ -407,7 +598,7 @@
                             <img src="https://images.pexels.com/photos/5327647/pexels-photo-5327647.jpeg?auto=compress&cs=tinysrgb&w=200&h=200&fit=crop" alt="Lisa Thompson">
                         </div>
                         <h4>Lisa Thompson</h4>
-                        <p>Radiographer, Vancouver General</p>
+                        <p>Senior Physiotherapist, Vancouver General</p>
                         <div class="alumni-location">
                             <span class="flag">🇬🇧</span>
                             <i class="fas fa-arrow-right"></i>
@@ -422,7 +613,7 @@
             <div class="container">
                 <div class="section-header">
                     <h2>Our Global Presence</h2>
-                    <p>Connecting healthcare professionals worldwide</p>
+                    <p>Connecting healthcare professionals worldwide with opportunities that matter</p>
                 </div>
                 
                 <div class="presence-stats">
@@ -450,7 +641,7 @@
             <div class="container">
                 <div class="motivation-content">
                     <h3>Join Thousands of Certified Healthcare Professionals</h3>
-                    <p>Your journey to global healthcare excellence starts with a single step</p>
+                    <p>Your journey to global healthcare excellence starts with a single step. Take that step today and transform your career forever.</p>
                     <div class="motivation-buttons">
                         <button class="cta-btn primary" onclick="scrollToPrograms()">
                             Start Your Journey Today
@@ -474,52 +665,56 @@
                         <i class="fas fa-heartbeat"></i>
                         <span>HealthCare EDGE</span>
                     </div>
-                    <p>Empowering healthcare professionals to achieve global excellence through comprehensive training and certification programs.</p>
+                    <p>Empowering healthcare professionals to achieve global excellence through comprehensive training and certification programs that open doors to unlimited opportunities worldwide.</p>
                     <div class="social-links">
                         <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
                         <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
                         <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
                         <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                        <a href="#" aria-label="YouTube"><i class="fab fa-youtube"></i></a>
                     </div>
                 </div>
                 
                 <div class="footer-section">
-                    <h4>Quick Links</h4>
+                    <h4>Training Programs</h4>
                     <ul>
                         <li><a href="nurse-edge.html">Nurse EDGE</a></li>
                         <li><a href="doc-edge.html">Doc EDGE</a></li>
                         <li><a href="allied-edge.html">Allied EDGE</a></li>
                         <li><a href="fee-structure.html">Fee Structure</a></li>
+                        <li><a href="#">Success Stories</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-section">
-                    <h4>Support</h4>
+                    <h4>Support & Resources</h4>
                     <ul>
                         <li><a href="#">Help Center</a></li>
-                        <li><a href="#">Live Chat</a></li>
+                        <li><a href="#">Live Chat Support</a></li>
                         <li><a href="#">Documentation</a></li>
                         <li><a href="#">Community Forum</a></li>
+                        <li><a href="#">Career Guidance</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-section">
-                    <h4>Contact Info</h4>
+                    <h4>Contact Information</h4>
                     <ul>
                         <li><i class="fas fa-envelope"></i> info@healthcareedge.com</li>
                         <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
-                        <li><i class="fas fa-map-marker-alt"></i> Global Healthcare Center</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Global Healthcare Center, International District</li>
                         <li><i class="fas fa-clock"></i> 24/7 Support Available</li>
+                        <li><i class="fas fa-globe"></i> Serving 50+ Countries Worldwide</li>
                     </ul>
                 </div>
             </div>
             
             <div class="footer-bottom">
-                <p>&copy; 2025 HealthCare EDGE. All rights reserved. Empowering healthcare professionals worldwide.</p>
+                <p>&copy; 2025 HealthCare EDGE. All rights reserved. Empowering healthcare professionals worldwide to achieve their dreams and make a difference in global healthcare.</p>
             </div>
         </div>
     </footer>
 
-     <script src="/2006/training/scripts/script.js"></script>
+    <script src="/training/scripts/script.js"></script>
 </body>
 </html>

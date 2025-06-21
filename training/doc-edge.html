@@ -3,19 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Doc EDGE - Course Searcher | HealthCare EDGE</title>
-    <meta name="description" content="Find the perfect medical certification pathway for your specialty and target country.">
-    <link rel="stylesheet" href="/2006/training/style.css">
+    <title>Doc EDGE - Advanced Medical Certification | HealthCare EDGE</title>
+    <meta name="description" content="Advance your medical career with PLAB, USMLE preparation, NHS fellowships, and global medical licensing support. Join 1500+ certified doctors worldwide.">
+    <link rel="stylesheet" href="/training/style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
         <div class="container">
             <nav class="nav">
-                <div class="logo">
+                <a href="index.html" class="logo">
                     <i class="fas fa-heartbeat"></i>
                     <span>HealthCare EDGE</span>
-                </div>
+                </a>
                 <ul class="nav-links">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="nurse-edge.html">Nurse EDGE</a></li>
@@ -42,11 +45,11 @@
                     <div class="breadcrumb">
                         <a href="index.html">Home</a> <i class="fas fa-chevron-right"></i> <span>Doc EDGE</span>
                     </div>
-                    <h1 class="hero-title">Find Your Medical Certification Pathway</h1>
-                    <p class="hero-subtitle">Discover specialized programs for your medical specialty and target country</p>
+                    <h1 class="hero-title">Advance Your Medical Career Globally</h1>
+                    <p class="hero-subtitle">Master PLAB, USMLE, secure NHS fellowships, and unlock prestigious medical opportunities worldwide with our comprehensive physician certification program</p>
                     <div class="hero-badge">
                         <i class="fas fa-stethoscope"></i>
-                        <span>Medical Excellence</span>
+                        <span>Medical Excellence Program</span>
                     </div>
                 </div>
             </div>
@@ -55,8 +58,8 @@
         <section class="course-searcher">
             <div class="container">
                 <div class="searcher-header">
-                    <h2>Medical Course Searcher</h2>
-                    <p>Filter and find the perfect medical certification pathway for your career goals</p>
+                    <h2>Find Your Medical Certification Pathway</h2>
+                    <p>Discover specialized programs for your medical specialty and target country with expert guidance and proven success rates</p>
                 </div>
                 
                 <div class="filters-container">
@@ -102,9 +105,9 @@
                     </div>
                     
                     <div class="filter-group">
-                        <label for="exam-type-filter">Exam Type</label>
+                        <label for="exam-type-filter">Examination Type</label>
                         <select id="exam-type-filter" onchange="filterCourses()">
-                            <option value="">All Exams</option>
+                            <option value="">All Examinations</option>
                             <option value="plab">PLAB</option>
                             <option value="usmle">USMLE</option>
                             <option value="osce">OSCE</option>
@@ -115,17 +118,17 @@
                     
                     <button class="clear-filters-btn" onclick="clearFilters()">
                         <i class="fas fa-times"></i>
-                        Clear Filters
+                        Clear All Filters
                     </button>
                 </div>
                 
                 <div class="search-results">
                     <div class="results-header">
-                        <span id="results-count">18 pathways found</span>
+                        <span id="results-count">8 medical pathways found</span>
                         <div class="sort-options">
                             <label for="sort-by">Sort by:</label>
                             <select id="sort-by" onchange="sortCourses()">
-                                <option value="popularity">Popularity</option>
+                                <option value="popularity">Most Popular</option>
                                 <option value="duration">Duration</option>
                                 <option value="price">Price</option>
                                 <option value="success-rate">Success Rate</option>
@@ -144,7 +147,7 @@
             <div class="container">
                 <div class="section-header">
                     <h2>Doc EDGE Program Overview</h2>
-                    <p>Comprehensive medical training for global practice</p>
+                    <p>Comprehensive medical training for global practice and career advancement</p>
                 </div>
                 
                 <div class="overview-grid">
@@ -152,13 +155,14 @@
                         <div class="overview-icon">
                             <i class="fas fa-clipboard-check"></i>
                         </div>
-                        <h3>Medical Examinations</h3>
-                        <p>Master PLAB, USMLE, and other international medical examinations.</p>
+                        <h3>Medical Examinations Mastery</h3>
+                        <p>Master PLAB, USMLE, and other international medical examinations with our proven preparation methods and expert guidance.</p>
                         <ul>
-                            <li>PLAB 1 & 2 preparation</li>
-                            <li>USMLE Step 1, 2 & 3</li>
-                            <li>Clinical skills assessment</li>
-                            <li>Mock examinations</li>
+                            <li>PLAB Part 1 & 2 comprehensive preparation</li>
+                            <li>USMLE Step 1, 2 CK, 2 CS & 3 training</li>
+                            <li>Clinical skills assessment and improvement</li>
+                            <li>Mock examinations with detailed feedback</li>
+                            <li>Personalized study plans and progress tracking</li>
                         </ul>
                     </div>
                     
@@ -166,13 +170,14 @@
                         <div class="overview-icon">
                             <i class="fas fa-hospital"></i>
                         </div>
-                        <h3>Fellowship Programs</h3>
-                        <p>Access exclusive fellowship opportunities in prestigious institutions.</p>
+                        <h3>Fellowship & Research Programs</h3>
+                        <p>Access exclusive fellowship opportunities in prestigious institutions and advance your medical career with research opportunities.</p>
                         <ul>
-                            <li>NHS fellowship applications</li>
-                            <li>Research opportunities</li>
-                            <li>Mentorship programs</li>
-                            <li>Specialty training</li>
+                            <li>NHS fellowship applications and guidance</li>
+                            <li>Research opportunities and publications</li>
+                            <li>Mentorship programs with leading physicians</li>
+                            <li>Specialty training and subspecialization</li>
+                            <li>Academic career development support</li>
                         </ul>
                     </div>
                     
@@ -180,13 +185,14 @@
                         <div class="overview-icon">
                             <i class="fas fa-file-signature"></i>
                         </div>
-                        <h3>Licensing Support</h3>
-                        <p>Complete assistance with medical licensing and registration.</p>
+                        <h3>Licensing & Registration Support</h3>
+                        <p>Complete assistance with medical licensing and registration processes for multiple countries and healthcare systems.</p>
                         <ul>
-                            <li>GMC registration (UK)</li>
-                            <li>ECFMG certification (USA)</li>
-                            <li>Medical board applications</li>
-                            <li>Documentation support</li>
+                            <li>GMC registration and licensing (UK)</li>
+                            <li>ECFMG certification and USMLE (USA)</li>
+                            <li>Medical board applications worldwide</li>
+                            <li>Documentation preparation and verification</li>
+                            <li>Credential evaluation and assessment</li>
                         </ul>
                     </div>
                     
@@ -194,14 +200,73 @@
                         <div class="overview-icon">
                             <i class="fas fa-globe"></i>
                         </div>
-                        <h3>Country Readiness</h3>
-                        <p>Prepare for specific healthcare systems and cultural adaptation.</p>
+                        <h3>Global Career Readiness</h3>
+                        <p>Prepare for specific healthcare systems and cultural adaptation with comprehensive country-specific training programs.</p>
                         <ul>
-                            <li>Healthcare system orientation</li>
-                            <li>Cultural competency training</li>
-                            <li>Legal and ethical standards</li>
-                            <li>Immigration guidance</li>
+                            <li>Healthcare system orientation by country</li>
+                            <li>Professional standards and ethics training</li>
+                            <li>Cultural competency and communication skills</li>
+                            <li>Immigration and visa guidance support</li>
+                            <li>Career planning and advancement strategies</li>
                         </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="learning-path">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Your Medical Excellence Journey</h2>
+                    <p>Follow our proven pathway to international medical success and career advancement</p>
+                </div>
+                
+                <div class="path-container">
+                    <div class="path-line"></div>
+                    <div class="path-steps">
+                        <div class="path-step" onclick="showPathStep(0)">
+                            <i class="fas fa-user-md"></i>
+                            <span>Medical Assessment</span>
+                        </div>
+                        <div class="path-step" onclick="showPathStep(1)">
+                            <i class="fas fa-book-medical"></i>
+                            <span>Exam Preparation</span>
+                        </div>
+                        <div class="path-step" onclick="showPathStep(2)">
+                            <i class="fas fa-certificate"></i>
+                            <span>Certification</span>
+                        </div>
+                        <div class="path-step" onclick="showPathStep(3)">
+                            <i class="fas fa-hospital-user"></i>
+                            <span>Fellowship/Placement</span>
+                        </div>
+                        <div class="path-step" onclick="showPathStep(4)">
+                            <i class="fas fa-trophy"></i>
+                            <span>Career Success</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="path-details">
+                    <div class="step-detail active">
+                        <h4>Comprehensive Medical Assessment</h4>
+                        <p>We begin with a thorough evaluation of your medical knowledge, clinical experience, and career aspirations to create a personalized pathway that maximizes your potential for international medical success.</p>
+                    </div>
+                    <div class="step-detail">
+                        <h4>Intensive Examination Preparation</h4>
+                        <p>Master PLAB, USMLE, or other medical examinations with our comprehensive training program featuring expert instructors, simulation exercises, and personalized study plans tailored to your learning style.</p>
+                    </div>
+                    <div class="step-detail">
+                        <h4>Medical Certification Achievement</h4>
+                        <p>Obtain globally recognized medical certifications with our proven preparation methods, achieving high success rates in international medical examinations and licensing requirements.</p>
+                    </div>
+                    <div class="step-detail">
+                        <h4>Fellowship and Career Placement</h4>
+                        <p>Secure prestigious fellowship positions or medical placements with our extensive network of healthcare partners, including application support, interview preparation, and ongoing career guidance.</p>
+                    </div>
+                    <div class="step-detail">
+                        <h4>International Medical Career Success</h4>
+                        <p>Launch your global medical career with confidence, backed by our lifetime alumni network, continuous professional development opportunities, and ongoing mentorship from leading physicians worldwide.</p>
                     </div>
                 </div>
             </div>
@@ -211,7 +276,7 @@
             <div class="container">
                 <div class="section-header">
                     <h2>Our Medical Success Metrics</h2>
-                    <p>Proven results in medical certification and placement</p>
+                    <p>Proven results in medical certification and career advancement worldwide</p>
                 </div>
                 
                 <div class="metrics-grid">
@@ -222,7 +287,7 @@
                     </div>
                     <div class="metric-card">
                         <div class="metric-number">89%</div>
-                        <div class="metric-label">USMLE Success</div>
+                        <div class="metric-label">USMLE Success Rate</div>
                         <div class="metric-description">Success rate for USMLE Step examinations</div>
                     </div>
                     <div class="metric-card">
@@ -233,7 +298,7 @@
                     <div class="metric-card">
                         <div class="metric-number">85%</div>
                         <div class="metric-label">Fellowship Placement</div>
-                        <div class="metric-description">Successful fellowship placements</div>
+                        <div class="metric-description">Successful fellowship and residency placements</div>
                     </div>
                 </div>
             </div>
@@ -243,7 +308,7 @@
             <div class="container">
                 <div class="section-header">
                     <h2>Medical Specialties We Support</h2>
-                    <p>Comprehensive training across all major medical specialties</p>
+                    <p>Comprehensive training across all major medical specialties and subspecialties</p>
                 </div>
                 
                 <div class="specialties-grid">
@@ -252,42 +317,42 @@
                             <i class="fas fa-heart"></i>
                         </div>
                         <h4>Cardiology</h4>
-                        <p>Heart and cardiovascular system specialization</p>
+                        <p>Heart and cardiovascular system specialization with advanced training</p>
                     </div>
                     <div class="specialty-card">
                         <div class="specialty-icon">
                             <i class="fas fa-brain"></i>
                         </div>
                         <h4>Neurology</h4>
-                        <p>Nervous system and brain disorders</p>
+                        <p>Nervous system and brain disorders with cutting-edge research</p>
                     </div>
                     <div class="specialty-card">
                         <div class="specialty-icon">
                             <i class="fas fa-child"></i>
                         </div>
                         <h4>Pediatrics</h4>
-                        <p>Medical care for infants and children</p>
+                        <p>Medical care for infants, children, and adolescents</p>
                     </div>
                     <div class="specialty-card">
                         <div class="specialty-icon">
                             <i class="fas fa-cut"></i>
                         </div>
                         <h4>Surgery</h4>
-                        <p>Surgical procedures and interventions</p>
+                        <p>Surgical procedures and interventions across all specialties</p>
                     </div>
                     <div class="specialty-card">
                         <div class="specialty-icon">
                             <i class="fas fa-x-ray"></i>
                         </div>
                         <h4>Radiology</h4>
-                        <p>Medical imaging and diagnostics</p>
+                        <p>Medical imaging and diagnostic procedures with AI integration</p>
                     </div>
                     <div class="specialty-card">
                         <div class="specialty-icon">
                             <i class="fas fa-ambulance"></i>
                         </div>
                         <h4>Emergency Medicine</h4>
-                        <p>Acute care and emergency treatment</p>
+                        <p>Acute care and emergency treatment with trauma specialization</p>
                     </div>
                 </div>
             </div>
@@ -297,14 +362,14 @@
             <div class="container">
                 <div class="section-header">
                     <h2>Doctor Success Stories</h2>
-                    <p>Physicians who advanced their careers through Doc EDGE</p>
+                    <p>Physicians who advanced their careers through Doc EDGE and are now leading medical professionals worldwide</p>
                 </div>
                 
                 <div class="testimonials-grid">
                     <div class="testimonial-card featured">
                         <div class="testimonial-quote">
                             <blockquote>
-                                "Doc EDGE helped me pass USMLE and secure a residency in New York. The comprehensive preparation was exceptional."
+                                Doc EDGE helped me pass USMLE and secure a residency in New York. The comprehensive preparation and fellowship guidance were exceptional and life-changing.
                             </blockquote>
                         </div>
                         <div class="testimonial-author">
@@ -313,7 +378,7 @@
                             </div>
                             <div class="author-details">
                                 <h4>Dr. Raj Patel</h4>
-                                <p>Internal Medicine Resident, NYU Langone</p>
+                                <p>Internal Medicine Resident, NYU Langone Medical Center</p>
                                 <div class="author-journey">
                                     <span class="flag">🇮🇳</span>
                                     <i class="fas fa-arrow-right"></i>
@@ -327,7 +392,7 @@
                     <div class="testimonial-card">
                         <div class="testimonial-quote">
                             <blockquote>
-                                "The PLAB preparation was thorough and the NHS fellowship guidance invaluable. Now I'm a consultant cardiologist in London."
+                                The PLAB preparation was thorough and the NHS fellowship guidance invaluable. Now I'm a consultant cardiologist in London living my dream.
                             </blockquote>
                         </div>
                         <div class="testimonial-author">
@@ -350,7 +415,7 @@
                     <div class="testimonial-card">
                         <div class="testimonial-quote">
                             <blockquote>
-                                "The fellowship program opened doors I never thought possible. Now I'm conducting research at Mayo Clinic."
+                                The fellowship program opened doors I never thought possible. Now I'm conducting groundbreaking research at Mayo Clinic.
                             </blockquote>
                         </div>
                         <div class="testimonial-author">
@@ -359,7 +424,7 @@
                             </div>
                             <div class="author-details">
                                 <h4>Dr. Priya Sharma</h4>
-                                <p>Research Fellow, Mayo Clinic</p>
+                                <p>Research Fellow & Pediatrician, Mayo Clinic</p>
                                 <div class="author-journey">
                                     <span class="flag">🇮🇳</span>
                                     <i class="fas fa-arrow-right"></i>
@@ -373,51 +438,101 @@
             </div>
         </section>
 
+        <section class="interactive-features">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Advanced Medical Training Technologies</h2>
+                    <p>Experience cutting-edge training methods designed for medical excellence and career advancement</p>
+                </div>
+                
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-image">
+                            <i class="fas fa-microscope"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Virtual Medical Simulations</h4>
+                            <p>Practice complex medical procedures and patient interactions in immersive virtual environments, providing safe and realistic training experiences.</p>
+                            <a href="#" class="feature-link">
+                                Experience Simulations <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-image">
+                            <i class="fas fa-brain"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>AI-Powered PLAB/USMLE Prep</h4>
+                            <p>Personalized examination preparation with AI that adapts to your learning style, identifies knowledge gaps, and provides targeted practice questions.</p>
+                            <a href="#" class="feature-link">
+                                Try AI Training <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-image">
+                            <i class="fas fa-video"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Live Medical Conferences</h4>
+                            <p>Attend live medical conferences, grand rounds, and case discussions with leading physicians from top medical institutions worldwide.</p>
+                            <a href="#" class="feature-link">
+                                Join Conferences <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section class="faq-section">
             <div class="container">
                 <div class="section-header">
                     <h2>Frequently Asked Questions</h2>
-                    <p>Common questions about medical certification and global practice</p>
+                    <p>Common questions about medical certification, fellowships, and global medical practice</p>
                 </div>
                 
                 <div class="faq-accordion">
                     <div class="faq-item">
                         <button class="faq-question" onclick="toggleFAQ(this)">
-                            <span>What's the difference between PLAB and USMLE?</span>
+                            <span>What's the difference between PLAB and USMLE preparation?</span>
                             <i class="fas fa-chevron-down"></i>
                         </button>
                         <div class="faq-answer">
-                            <p>PLAB is for practicing medicine in the UK, while USMLE is for the United States. PLAB consists of two parts (written and clinical), while USMLE has three steps. Both require different preparation strategies and we provide specialized training for each.</p>
+                            <p>PLAB is for practicing medicine in the UK, while USMLE is for the United States. PLAB consists of two parts (written and clinical), while USMLE has three steps. Both require different preparation strategies and we provide specialized training for each with dedicated instructors and country-specific guidance.</p>
                         </div>
                     </div>
                     
                     <div class="faq-item">
                         <button class="faq-question" onclick="toggleFAQ(this)">
-                            <span>How long does it take to complete medical licensing?</span>
+                            <span>How long does it take to complete medical licensing with your program?</span>
                             <i class="fas fa-chevron-down"></i>
                         </button>
                         <div class="faq-answer">
-                            <p>The timeline varies by country and certification. PLAB typically takes 6-12 months, USMLE can take 12-18 months, and additional licensing requirements may add 3-6 months. We provide detailed timelines based on your specific pathway.</p>
+                            <p>The timeline varies by country and certification. PLAB typically takes 6-12 months, USMLE can take 12-18 months, and additional licensing requirements may add 3-6 months. We provide detailed timelines and accelerated options based on your specific pathway and current qualifications.</p>
                         </div>
                     </div>
                     
                     <div class="faq-item">
                         <button class="faq-question" onclick="toggleFAQ(this)">
-                            <span>Do you guarantee fellowship placement?</span>
+                            <span>Do you guarantee fellowship or residency placement?</span>
                             <i class="fas fa-chevron-down"></i>
                         </button>
                         <div class="faq-answer">
-                            <p>While we cannot guarantee placement, our 85% success rate speaks to our comprehensive support system. We provide application guidance, interview preparation, and direct connections with fellowship programs through our extensive network.</p>
+                            <p>While we cannot guarantee placement, our 85% success rate speaks to our comprehensive support system. We provide application guidance, interview preparation, research opportunities, and direct connections with fellowship programs through our extensive network of medical institutions.</p>
                         </div>
                     </div>
                     
                     <div class="faq-item">
                         <button class="faq-question" onclick="toggleFAQ(this)">
-                            <span>What are the English language requirements?</span>
+                            <span>What are the English language requirements for medical practice abroad?</span>
                             <i class="fas fa-chevron-down"></i>
                         </button>
                         <div class="faq-answer">
-                            <p>Most countries require IELTS scores of 7.0-8.0 overall with specific band requirements. Some accept OET (Occupational English Test) as an alternative. We provide specialized medical English training to help you achieve required scores.</p>
+                            <p>Most countries require IELTS scores of 7.0-8.0 overall with specific band requirements. Some accept OET (Occupational English Test) as an alternative. We provide specialized medical English training to help you achieve required scores with focus on medical communication and terminology.</p>
                         </div>
                     </div>
                     
@@ -427,17 +542,17 @@
                             <i class="fas fa-chevron-down"></i>
                         </button>
                         <div class="faq-answer">
-                            <p>Each country has specific licensing requirements. However, some certifications like USMLE or PLAB can facilitate easier transitions to other countries. We provide guidance on multi-country career pathways and reciprocal recognition agreements.</p>
+                            <p>Each country has specific licensing requirements. However, some certifications like USMLE or PLAB can facilitate easier transitions to other countries. We provide guidance on multi-country career pathways and reciprocal recognition agreements between different medical boards.</p>
                         </div>
                     </div>
                     
                     <div class="faq-item">
                         <button class="faq-question" onclick="toggleFAQ(this)">
-                            <span>What support do you provide for visa applications?</span>
+                            <span>What support do you provide for visa and immigration applications?</span>
                             <i class="fas fa-chevron-down"></i>
                         </button>
                         <div class="faq-answer">
-                            <p>We provide comprehensive visa and immigration support including document preparation, application guidance, and connections with immigration specialists. Our team helps with work permits, skilled worker visas, and other immigration pathways.</p>
+                            <p>We provide comprehensive visa and immigration support including document preparation, application guidance, and connections with immigration specialists. Our team helps with work permits, skilled worker visas, and other immigration pathways specific to medical professionals.</p>
                         </div>
                     </div>
                 </div>
@@ -448,34 +563,34 @@
             <div class="container">
                 <div class="cta-content">
                     <h2>Advance Your Medical Career Beyond Borders</h2>
-                    <p>Join elite physicians who have elevated their practice through our comprehensive Doc EDGE program</p>
+                    <p>Join elite physicians who have elevated their practice through our comprehensive Doc EDGE program and are now leading medical professionals worldwide</p>
                     
                     <div class="cta-features">
                         <div class="cta-feature">
                             <i class="fas fa-user-md"></i>
-                            <span>Expert medical faculty</span>
+                            <span>Expert medical faculty and mentors</span>
                         </div>
                         <div class="cta-feature">
                             <i class="fas fa-hospital"></i>
-                            <span>Clinical placement support</span>
+                            <span>Clinical placement and fellowship support</span>
                         </div>
                         <div class="cta-feature">
                             <i class="fas fa-trophy"></i>
-                            <span>Fellowship opportunities</span>
+                            <span>Prestigious fellowship opportunities</span>
                         </div>
                         <div class="cta-feature">
                             <i class="fas fa-handshake"></i>
-                            <span>Lifetime career support</span>
+                            <span>Lifetime career support and networking</span>
                         </div>
                     </div>
 
                     <div class="cta-buttons">
-                        <button class="cta-btn primary">
-                            Get Started with Doc EDGE
+                        <button class="cta-btn primary" onclick="showNotification('Medical consultation scheduled! Our physician specialists will contact you within 24 hours.', 'success')">
+                            Start Doc EDGE Today
                             <i class="fas fa-arrow-right"></i>
                         </button>
                         <button class="cta-btn secondary" onclick="navigateToPage('fee-structure.html')">
-                            View Pricing
+                            View Pricing Plans
                             <i class="fas fa-dollar-sign"></i>
                         </button>
                     </div>
@@ -492,35 +607,54 @@
                         <i class="fas fa-heartbeat"></i>
                         <span>HealthCare EDGE</span>
                     </div>
-                    <p>Empowering healthcare professionals to achieve global excellence through comprehensive training and certification programs.</p>
+                    <p>Empowering healthcare professionals to achieve global excellence through comprehensive training and certification programs that transform medical careers worldwide.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
                 </div>
                 
                 <div class="footer-section">
-                    <h4>Programs</h4>
+                    <h4>Medical Programs</h4>
                     <ul>
                         <li><a href="nurse-edge.html">Nurse EDGE</a></li>
                         <li><a href="doc-edge.html">Doc EDGE</a></li>
                         <li><a href="allied-edge.html">Allied EDGE</a></li>
                         <li><a href="fee-structure.html">Fee Structure</a></li>
+                        <li><a href="#">Medical Fellowships</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-section">
-                    <h4>Contact Info</h4>
+                    <h4>Medical Resources</h4>
                     <ul>
-                        <li><i class="fas fa-envelope"></i> info@healthcareedge.com</li>
+                        <li><a href="#">PLAB Preparation</a></li>
+                        <li><a href="#">USMLE Training</a></li>
+                        <li><a href="#">Medical Research</a></li>
+                        <li><a href="#">Clinical Guidelines</a></li>
+                        <li><a href="#">Medical Conferences</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Information</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> medical@healthcareedge.com</li>
                         <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
-                        <li><i class="fas fa-map-marker-alt"></i> Global Healthcare Center</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Global Medical Center</li>
+                        <li><i class="fas fa-clock"></i> 24/7 Medical Support</li>
                     </ul>
                 </div>
             </div>
             
             <div class="footer-bottom">
-                <p>&copy; 2025 HealthCare EDGE. All rights reserved. Empowering healthcare professionals worldwide.</p>
+                <p>&copy; 2025 HealthCare EDGE. All rights reserved. Empowering physicians worldwide to achieve excellence in global medical practice and advance healthcare for all.</p>
             </div>
         </div>
     </footer>
 
-     <script src="/2006/training/scripts/script.js"></script>
+    <script src="/training/scripts/script.js"></script>
 </body>
 </html>

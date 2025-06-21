@@ -3,19 +3,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Nurse EDGE - Course Searcher | HealthCare EDGE</title>
-    <meta name="description" content="Find the perfect nursing certification pathway for your target country and experience level.">
-    <link rel="stylesheet" href="/2006/training/style.css">
+    <title>Nurse EDGE - Advanced Nursing Certification | HealthCare EDGE</title>
+    <meta name="description" content="Transform your nursing career with our comprehensive OSCE preparation, language training, and global placement program. Join 2000+ certified nurses worldwide.">
+    <link rel="stylesheet" href="/training/style.css">
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
 </head>
 <body>
     <header class="header">
         <div class="container">
             <nav class="nav">
-                <div class="logo">
+                <a href="index.html" class="logo">
                     <i class="fas fa-heartbeat"></i>
                     <span>HealthCare EDGE</span>
-                </div>
+                </a>
                 <ul class="nav-links">
                     <li><a href="index.html">Home</a></li>
                     <li><a href="doc-edge.html">Doc EDGE</a></li>
@@ -42,11 +45,11 @@
                     <div class="breadcrumb">
                         <a href="index.html">Home</a> <i class="fas fa-chevron-right"></i> <span>Nurse EDGE</span>
                     </div>
-                    <h1 class="hero-title">Find Your Perfect Nursing Pathway</h1>
-                    <p class="hero-subtitle">Discover certification programs tailored to your experience and target country</p>
+                    <h1 class="hero-title">Transform Your Nursing Career Globally</h1>
+                    <p class="hero-subtitle">Master OSCE, achieve language proficiency, and secure your dream nursing position worldwide with our comprehensive certification program</p>
                     <div class="hero-badge">
                         <i class="fas fa-user-nurse"></i>
-                        <span>Nursing Excellence</span>
+                        <span>Nursing Excellence Program</span>
                     </div>
                 </div>
             </div>
@@ -55,8 +58,8 @@
         <section class="course-searcher">
             <div class="container">
                 <div class="searcher-header">
-                    <h2>Course Searcher</h2>
-                    <p>Filter and find the perfect nursing certification pathway for your goals</p>
+                    <h2>Find Your Perfect Nursing Pathway</h2>
+                    <p>Discover certification programs tailored to your experience level and target country with personalized recommendations</p>
                 </div>
                 
                 <div class="filters-container">
@@ -87,7 +90,7 @@
                     </div>
                     
                     <div class="filter-group">
-                        <label for="specialty-filter">Specialty</label>
+                        <label for="specialty-filter">Nursing Specialty</label>
                         <select id="specialty-filter" onchange="filterCourses()">
                             <option value="">All Specialties</option>
                             <option value="general">General Nursing</option>
@@ -100,7 +103,7 @@
                     </div>
                     
                     <div class="filter-group">
-                        <label for="duration-filter">Duration</label>
+                        <label for="duration-filter">Program Duration</label>
                         <select id="duration-filter" onchange="filterCourses()">
                             <option value="">Any Duration</option>
                             <option value="3-months">3 Months</option>
@@ -112,17 +115,17 @@
                     
                     <button class="clear-filters-btn" onclick="clearFilters()">
                         <i class="fas fa-times"></i>
-                        Clear Filters
+                        Clear All Filters
                     </button>
                 </div>
                 
                 <div class="search-results">
                     <div class="results-header">
-                        <span id="results-count">24 pathways found</span>
+                        <span id="results-count">8 nursing pathways found</span>
                         <div class="sort-options">
                             <label for="sort-by">Sort by:</label>
                             <select id="sort-by" onchange="sortCourses()">
-                                <option value="popularity">Popularity</option>
+                                <option value="popularity">Most Popular</option>
                                 <option value="duration">Duration</option>
                                 <option value="price">Price</option>
                                 <option value="success-rate">Success Rate</option>
@@ -141,7 +144,7 @@
             <div class="container">
                 <div class="section-header">
                     <h2>Nurse EDGE Program Overview</h2>
-                    <p>Comprehensive training modules designed for nursing excellence</p>
+                    <p>Comprehensive training modules designed for nursing excellence and global career success</p>
                 </div>
                 
                 <div class="overview-grid">
@@ -149,13 +152,14 @@
                         <div class="overview-icon">
                             <i class="fas fa-stethoscope"></i>
                         </div>
-                        <h3>Clinical Excellence</h3>
-                        <p>Master OSCE examinations and clinical skills required for international nursing practice.</p>
+                        <h3>Clinical Excellence Mastery</h3>
+                        <p>Master OSCE examinations and clinical skills required for international nursing practice with hands-on training and simulation.</p>
                         <ul>
-                            <li>OSCE preparation and practice</li>
-                            <li>Clinical skills assessment</li>
-                            <li>Patient care protocols</li>
-                            <li>Medical procedures training</li>
+                            <li>Comprehensive OSCE preparation and practice sessions</li>
+                            <li>Clinical skills assessment and improvement</li>
+                            <li>Patient care protocols and best practices</li>
+                            <li>Medical procedures training with simulation</li>
+                            <li>Evidence-based practice methodologies</li>
                         </ul>
                     </div>
                     
@@ -163,13 +167,14 @@
                         <div class="overview-icon">
                             <i class="fas fa-comments"></i>
                         </div>
-                        <h3>Language Mastery</h3>
-                        <p>Achieve fluency in English and German for effective patient communication.</p>
+                        <h3>Language & Communication</h3>
+                        <p>Achieve fluency in English and German for effective patient communication and professional interactions.</p>
                         <ul>
-                            <li>IELTS preparation and coaching</li>
-                            <li>German language training</li>
-                            <li>Medical terminology</li>
-                            <li>Patient communication skills</li>
+                            <li>IELTS preparation and coaching (Target: 7.0+)</li>
+                            <li>German language training (A1 to B2 levels)</li>
+                            <li>Medical terminology and healthcare vocabulary</li>
+                            <li>Patient communication and counseling skills</li>
+                            <li>Professional presentation and documentation</li>
                         </ul>
                     </div>
                     
@@ -178,12 +183,13 @@
                             <i class="fas fa-handshake"></i>
                         </div>
                         <h3>Professional Development</h3>
-                        <p>Build soft skills and professional etiquette for international healthcare settings.</p>
+                        <p>Build essential soft skills and professional etiquette for international healthcare settings and career advancement.</p>
                         <ul>
-                            <li>Healthcare professionalism</li>
-                            <li>Cultural competency</li>
-                            <li>Team collaboration</li>
-                            <li>Leadership skills</li>
+                            <li>Healthcare professionalism and ethics</li>
+                            <li>Cultural competency and sensitivity training</li>
+                            <li>Team collaboration and leadership skills</li>
+                            <li>Conflict resolution and stress management</li>
+                            <li>Career planning and advancement strategies</li>
                         </ul>
                     </div>
                     
@@ -191,14 +197,73 @@
                         <div class="overview-icon">
                             <i class="fas fa-globe"></i>
                         </div>
-                        <h3>Country Readiness</h3>
-                        <p>Prepare for specific healthcare systems and regulatory requirements.</p>
+                        <h3>Global Career Readiness</h3>
+                        <p>Prepare for specific healthcare systems and regulatory requirements with comprehensive country-specific training.</p>
                         <ul>
-                            <li>Healthcare system orientation</li>
-                            <li>Registration processes</li>
-                            <li>Legal and ethical standards</li>
-                            <li>Immigration support</li>
+                            <li>Healthcare system orientation by country</li>
+                            <li>Registration processes and documentation</li>
+                            <li>Legal and ethical standards compliance</li>
+                            <li>Immigration and visa application support</li>
+                            <li>Job placement and interview preparation</li>
                         </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="learning-path">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Your Nursing Excellence Journey</h2>
+                    <p>Follow our proven pathway to international nursing success</p>
+                </div>
+                
+                <div class="path-container">
+                    <div class="path-line"></div>
+                    <div class="path-steps">
+                        <div class="path-step" onclick="showPathStep(0)">
+                            <i class="fas fa-user-check"></i>
+                            <span>Skills Assessment</span>
+                        </div>
+                        <div class="path-step" onclick="showPathStep(1)">
+                            <i class="fas fa-graduation-cap"></i>
+                            <span>OSCE Training</span>
+                        </div>
+                        <div class="path-step" onclick="showPathStep(2)">
+                            <i class="fas fa-language"></i>
+                            <span>Language Mastery</span>
+                        </div>
+                        <div class="path-step" onclick="showPathStep(3)">
+                            <i class="fas fa-certificate"></i>
+                            <span>Certification</span>
+                        </div>
+                        <div class="path-step" onclick="showPathStep(4)">
+                            <i class="fas fa-briefcase"></i>
+                            <span>Job Placement</span>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="path-details">
+                    <div class="step-detail active">
+                        <h4>Comprehensive Nursing Skills Assessment</h4>
+                        <p>We begin with a thorough evaluation of your clinical skills, experience, and career goals to create a personalized learning pathway that maximizes your potential for international nursing success.</p>
+                    </div>
+                    <div class="step-detail">
+                        <h4>Intensive OSCE Preparation</h4>
+                        <p>Master the Objective Structured Clinical Examination with our comprehensive training program featuring simulation labs, mock exams, and personalized feedback from certified instructors.</p>
+                    </div>
+                    <div class="step-detail">
+                        <h4>Language Proficiency Development</h4>
+                        <p>Achieve required language standards with our specialized medical English and German training programs, focusing on patient communication and professional healthcare terminology.</p>
+                    </div>
+                    <div class="step-detail">
+                        <h4>International Nursing Certification</h4>
+                        <p>Obtain globally recognized nursing certifications with our proven preparation methods, achieving high success rates in IELTS, OSCE, and country-specific licensing examinations.</p>
+                    </div>
+                    <div class="step-detail">
+                        <h4>Guaranteed Job Placement</h4>
+                        <p>Secure your dream nursing position with our extensive network of healthcare partners worldwide, including interview preparation, CV optimization, and ongoing career support.</p>
                     </div>
                 </div>
             </div>
@@ -207,8 +272,8 @@
         <section class="success-metrics">
             <div class="container">
                 <div class="section-header">
-                    <h2>Our Success Metrics</h2>
-                    <p>Proven results that speak for themselves</p>
+                    <h2>Our Nursing Success Metrics</h2>
+                    <p>Proven results that demonstrate our commitment to your nursing career success</p>
                 </div>
                 
                 <div class="metrics-grid">
@@ -219,7 +284,7 @@
                     </div>
                     <div class="metric-card">
                         <div class="metric-number">94%</div>
-                        <div class="metric-label">Job Placement</div>
+                        <div class="metric-label">Job Placement Success</div>
                         <div class="metric-description">Successful job placement within 6 months</div>
                     </div>
                     <div class="metric-card">
@@ -229,7 +294,7 @@
                     </div>
                     <div class="metric-card">
                         <div class="metric-number">30+</div>
-                        <div class="metric-label">Countries</div>
+                        <div class="metric-label">Countries Served</div>
                         <div class="metric-description">Countries where our nurses work</div>
                     </div>
                 </div>
@@ -239,15 +304,15 @@
         <section class="testimonials-section">
             <div class="container">
                 <div class="section-header">
-                    <h2>Success Stories</h2>
-                    <p>Real experiences from nurses who achieved their global dreams</p>
+                    <h2>Nursing Success Stories</h2>
+                    <p>Real experiences from nurses who achieved their global dreams through our program</p>
                 </div>
                 
                 <div class="testimonials-grid">
                     <div class="testimonial-card featured">
                         <div class="testimonial-quote">
                             <blockquote>
-                                "The OSCE preparation was thorough and the language training exceptional. I passed on my first attempt and now work in London!"
+                                The OSCE preparation was thorough and the language training exceptional. I passed on my first attempt and now work in London with confidence and pride!
                             </blockquote>
                         </div>
                         <div class="testimonial-author">
@@ -256,7 +321,7 @@
                             </div>
                             <div class="author-details">
                                 <h4>Sandra Rodriguez</h4>
-                                <p>Staff Nurse, Guy's Hospital London</p>
+                                <p>Senior Staff Nurse, Guy's Hospital London</p>
                                 <div class="author-journey">
                                     <span class="flag">🇵🇭</span>
                                     <i class="fas fa-arrow-right"></i>
@@ -270,7 +335,7 @@
                     <div class="testimonial-card">
                         <div class="testimonial-quote">
                             <blockquote>
-                                "The cultural preparation and soft skills training made my transition to German healthcare seamless."
+                                The cultural preparation and soft skills training made my transition to German healthcare seamless. I'm now a team leader in Berlin!
                             </blockquote>
                         </div>
                         <div class="testimonial-author">
@@ -279,7 +344,7 @@
                             </div>
                             <div class="author-details">
                                 <h4>Priya Patel</h4>
-                                <p>ICU Nurse, Berlin Medical Center</p>
+                                <p>ICU Team Leader, Berlin Medical Center</p>
                                 <div class="author-journey">
                                     <span class="flag">🇮🇳</span>
                                     <i class="fas fa-arrow-right"></i>
@@ -293,7 +358,7 @@
                     <div class="testimonial-card">
                         <div class="testimonial-quote">
                             <blockquote>
-                                "From small-town nursing to international excellence. Nurse EDGE gave me wings to fly globally."
+                                From small-town nursing to international excellence. Nurse EDGE gave me wings to fly globally and achieve my dreams.
                             </blockquote>
                         </div>
                         <div class="testimonial-author">
@@ -302,7 +367,7 @@
                             </div>
                             <div class="author-details">
                                 <h4>Maria Santos</h4>
-                                <p>Emergency Nurse, Toronto General Hospital</p>
+                                <p>Emergency Nurse Specialist, Toronto General Hospital</p>
                                 <div class="author-journey">
                                     <span class="flag">🇵🇭</span>
                                     <i class="fas fa-arrow-right"></i>
@@ -316,21 +381,71 @@
             </div>
         </section>
 
+        <section class="interactive-features">
+            <div class="container">
+                <div class="section-header">
+                    <h2>Advanced Learning Technologies</h2>
+                    <p>Experience cutting-edge training methods designed for nursing excellence</p>
+                </div>
+                
+                <div class="features-grid">
+                    <div class="feature-card">
+                        <div class="feature-image">
+                            <i class="fas fa-vr-cardboard"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Virtual Reality Clinical Training</h4>
+                            <p>Practice complex nursing procedures in immersive VR environments, providing safe and realistic training experiences before real patient interactions.</p>
+                            <a href="#" class="feature-link">
+                                Experience VR Training <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-image">
+                            <i class="fas fa-robot"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>AI-Powered OSCE Preparation</h4>
+                            <p>Personalized OSCE training with AI that adapts to your learning style, identifies weak areas, and provides targeted practice scenarios.</p>
+                            <a href="#" class="feature-link">
+                                Try AI Training <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                    
+                    <div class="feature-card">
+                        <div class="feature-image">
+                            <i class="fas fa-mobile-alt"></i>
+                        </div>
+                        <div class="feature-content">
+                            <h4>Mobile Learning Platform</h4>
+                            <p>Study nursing concepts anywhere with our comprehensive mobile app featuring offline content, progress tracking, and interactive case studies.</p>
+                            <a href="#" class="feature-link">
+                                Download App <i class="fas fa-arrow-right"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
         <section class="faq-section">
             <div class="container">
                 <div class="section-header">
                     <h2>Frequently Asked Questions</h2>
-                    <p>Get answers to common questions about the Nurse EDGE program</p>
+                    <p>Get answers to common questions about the Nurse EDGE program and nursing certification</p>
                 </div>
                 
                 <div class="faq-accordion">
                     <div class="faq-item">
                         <button class="faq-question" onclick="toggleFAQ(this)">
-                            <span>How long does OSCE preparation take?</span>
+                            <span>How long does OSCE preparation take with your program?</span>
                             <i class="fas fa-chevron-down"></i>
                         </button>
                         <div class="faq-answer">
-                            <p>Our comprehensive OSCE preparation typically takes 3-6 months, depending on your current skill level and chosen intensity. We offer flexible scheduling with both full-time and part-time options to accommodate working professionals.</p>
+                            <p>Our comprehensive OSCE preparation typically takes 3-6 months, depending on your current skill level and chosen intensity. We offer flexible scheduling with both full-time and part-time options to accommodate working professionals. Our accelerated program can be completed in as little as 8 weeks for experienced nurses.</p>
                         </div>
                     </div>
                     
@@ -340,47 +455,57 @@
                             <i class="fas fa-chevron-down"></i>
                         </button>
                         <div class="faq-answer">
-                            <p>Most countries require an overall IELTS score of 7.0 with no band less than 6.5. Some countries like the UK may require 7.0 in all bands. Our language training program is specifically designed to help you achieve these scores.</p>
+                            <p>Most countries require an overall IELTS score of 7.0 with no band less than 6.5. Some countries like the UK may require 7.0 in all bands for nursing registration. Our language training program is specifically designed to help you achieve these scores with a 95% success rate.</p>
                         </div>
                     </div>
                     
                     <div class="faq-item">
                         <button class="faq-question" onclick="toggleFAQ(this)">
-                            <span>Do you provide job placement assistance?</span>
+                            <span>Do you provide guaranteed job placement assistance?</span>
                             <i class="fas fa-chevron-down"></i>
                         </button>
                         <div class="faq-answer">
-                            <p>Yes! We have partnerships with healthcare institutions globally and provide comprehensive job placement support including CV optimization, interview preparation, and direct connections with employers in your target country.</p>
+                            <p>Yes! We have partnerships with healthcare institutions globally and provide comprehensive job placement support including CV optimization, interview preparation, and direct connections with employers in your target country. Our placement success rate is 94% within 6 months of certification completion.</p>
                         </div>
                     </div>
                     
                     <div class="faq-item">
                         <button class="faq-question" onclick="toggleFAQ(this)">
-                            <span>Can I study while working full-time?</span>
+                            <span>Can I study while working full-time as a nurse?</span>
                             <i class="fas fa-chevron-down"></i>
                         </button>
                         <div class="faq-answer">
-                            <p>Absolutely! Our program is designed for working professionals with flexible scheduling options, weekend classes, and online modules that you can complete at your own pace.</p>
+                            <p>Absolutely! Our program is designed for working professionals with flexible scheduling options, weekend classes, evening sessions, and online modules that you can complete at your own pace. Many of our successful graduates completed the program while maintaining their current nursing positions.</p>
                         </div>
                     </div>
                     
                     <div class="faq-item">
                         <button class="faq-question" onclick="toggleFAQ(this)">
-                            <span>What countries can I work in after certification?</span>
+                            <span>Which countries can I work in after Nurse EDGE certification?</span>
                             <i class="fas fa-chevron-down"></i>
                         </button>
                         <div class="faq-answer">
-                            <p>Our certifications are recognized in over 30 countries including the UK, Germany, Canada, Australia, New Zealand, and many others. We provide country-specific guidance based on your career goals.</p>
+                            <p>Our certifications are recognized in over 30 countries including the UK, Germany, Canada, Australia, New Zealand, USA, Ireland, Netherlands, and many others. We provide country-specific guidance and preparation based on your career goals and preferred destinations.</p>
                         </div>
                     </div>
                     
                     <div class="faq-item">
                         <button class="faq-question" onclick="toggleFAQ(this)">
-                            <span>What is the success rate for job placement?</span>
+                            <span>What is your success rate for job placement?</span>
                             <i class="fas fa-chevron-down"></i>
                         </button>
                         <div class="faq-answer">
-                            <p>We maintain a 94% job placement success rate within 6 months of certification completion. Our extensive network of healthcare partners and dedicated placement team ensure you find the right opportunity.</p>
+                            <p>We maintain a 94% job placement success rate within 6 months of certification completion. Our extensive network of healthcare partners, dedicated placement team, and comprehensive career support ensure you find the right opportunity that matches your skills and aspirations.</p>
+                        </div>
+                    </div>
+                    
+                    <div class="faq-item">
+                        <button class="faq-question" onclick="toggleFAQ(this)">
+                            <span>Do you offer financial assistance or payment plans?</span>
+                            <i class="fas fa-chevron-down"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Yes, we offer various financial assistance options including flexible payment plans, scholarships for exceptional candidates, and partnerships with financial institutions for education loans. We also have income-share agreements where you pay a percentage of your salary after successful job placement.</p>
                         </div>
                     </div>
                 </div>
@@ -390,35 +515,35 @@
         <section class="final-cta">
             <div class="container">
                 <div class="cta-content">
-                    <h2>Ready to Start Your Global Nursing Journey?</h2>
-                    <p>Join thousands of nurses who have elevated their careers through our comprehensive certification program</p>
+                    <h2>Ready to Transform Your Nursing Career?</h2>
+                    <p>Join thousands of nurses who have elevated their careers through our comprehensive certification program and are now making a difference in healthcare worldwide</p>
                     
                     <div class="cta-features">
                         <div class="cta-feature">
                             <i class="fas fa-calendar"></i>
-                            <span>Flexible scheduling</span>
+                            <span>Flexible scheduling options</span>
                         </div>
                         <div class="cta-feature">
                             <i class="fas fa-laptop"></i>
-                            <span>Online & in-person options</span>
+                            <span>Online & in-person training</span>
                         </div>
                         <div class="cta-feature">
                             <i class="fas fa-certificate"></i>
-                            <span>Internationally recognized</span>
+                            <span>Internationally recognized certification</span>
                         </div>
                         <div class="cta-feature">
                             <i class="fas fa-headset"></i>
-                            <span>24/7 support</span>
+                            <span>24/7 dedicated support</span>
                         </div>
                     </div>
 
                     <div class="cta-buttons">
-                        <button class="cta-btn primary">
-                            Start Nurse EDGE
+                        <button class="cta-btn primary" onclick="showNotification('Enrollment process initiated! Our nursing specialists will contact you within 24 hours.', 'success')">
+                            Start Nurse EDGE Today
                             <i class="fas fa-arrow-right"></i>
                         </button>
                         <button class="cta-btn secondary" onclick="navigateToPage('fee-structure.html')">
-                            View Pricing
+                            View Pricing Plans
                             <i class="fas fa-dollar-sign"></i>
                         </button>
                     </div>
@@ -435,35 +560,54 @@
                         <i class="fas fa-heartbeat"></i>
                         <span>HealthCare EDGE</span>
                     </div>
-                    <p>Empowering healthcare professionals to achieve global excellence through comprehensive training and certification programs.</p>
+                    <p>Empowering healthcare professionals to achieve global excellence through comprehensive training and certification programs that transform careers and lives.</p>
+                    <div class="social-links">
+                        <a href="#" aria-label="Facebook"><i class="fab fa-facebook"></i></a>
+                        <a href="#" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+                        <a href="#" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="#" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
                 </div>
                 
                 <div class="footer-section">
-                    <h4>Programs</h4>
+                    <h4>Training Programs</h4>
                     <ul>
                         <li><a href="nurse-edge.html">Nurse EDGE</a></li>
                         <li><a href="doc-edge.html">Doc EDGE</a></li>
                         <li><a href="allied-edge.html">Allied EDGE</a></li>
                         <li><a href="fee-structure.html">Fee Structure</a></li>
+                        <li><a href="#">Success Stories</a></li>
                     </ul>
                 </div>
                 
                 <div class="footer-section">
-                    <h4>Contact Info</h4>
+                    <h4>Support & Resources</h4>
                     <ul>
-                        <li><i class="fas fa-envelope"></i> info@healthcareedge.com</li>
+                        <li><a href="#">Help Center</a></li>
+                        <li><a href="#">Live Chat Support</a></li>
+                        <li><a href="#">Study Materials</a></li>
+                        <li><a href="#">Community Forum</a></li>
+                        <li><a href="#">Career Guidance</a></li>
+                    </ul>
+                </div>
+                
+                <div class="footer-section">
+                    <h4>Contact Information</h4>
+                    <ul>
+                        <li><i class="fas fa-envelope"></i> nursing@healthcareedge.com</li>
                         <li><i class="fas fa-phone"></i> +1 (555) 123-4567</li>
                         <li><i class="fas fa-map-marker-alt"></i> Global Healthcare Center</li>
+                        <li><i class="fas fa-clock"></i> 24/7 Support Available</li>
                     </ul>
                 </div>
             </div>
             
             <div class="footer-bottom">
-                <p>&copy; 2025 HealthCare EDGE. All rights reserved. Empowering healthcare professionals worldwide.</p>
+                <p>&copy; 2025 HealthCare EDGE. All rights reserved. Empowering nurses worldwide to achieve their dreams and provide exceptional patient care globally.</p>
             </div>
         </div>
     </footer>
 
-     <script src="/2006/training/scripts/script.js"></script>
+    <script src="/training/scripts/script.js"></script>
 </body>
 </html>
