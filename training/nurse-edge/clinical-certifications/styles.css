@@ -2498,10 +2498,10 @@ ul {
   color: #000931; /* or any brand color you prefer */
 }
 
-// ...existing code... */
+/* // ...existing code... */ 
 @media (min-width: 1025px) {
   .creative-hero-section {
-    padding-top: 6rem;
+    padding-top: 12rem;
   }
 }
 /* // ...existing code... */
